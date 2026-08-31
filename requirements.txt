@@ -1,0 +1,28 @@
+# Core
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+pydantic>=2.0.0
+tqdm>=4.66.0
+
+# Document parsing
+pymupdf>=1.23.0
+requests>=2.31.0
+
+# Embeddings & vector stores
+sentence-transformers>=2.3.0
+faiss-cpu>=1.7.4
+# psycopg[binary]>=3.1.0  # Uncomment for pgvector backend
+# pgvector>=0.2.0
+
+# LLM adapter
+openai>=1.12.0
+transformers>=4.37.0
+torch>=2.1.0
+
+# Evaluation
+datasets>=2.16.0
+scikit-learn>=1.4.0
+
+# Dev
+pytest>=8.0.0
+black>=24.0.0
