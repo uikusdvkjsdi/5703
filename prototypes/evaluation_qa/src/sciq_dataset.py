@@ -3,7 +3,7 @@
 import hashlib
 import random
 
-from schema import EvaluationExample
+from .schema import EvaluationExample
 
 
 LABELS = ["A", "B", "C", "D"]
