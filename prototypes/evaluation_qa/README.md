@@ -23,5 +23,4 @@ evaluation_qa/
 ├── data/
 └── docs/
 
-This prototype does not modify the existing production implementation under the repository's
-main src/, scripts/, tests/, or config/ directories.
+This prototype does not modify the existing production implementation under the repository's main src/, scripts/, tests/, or config/ directories.
