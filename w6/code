@@ -1,0 +1,373 @@
+from __future__ import annotations
+
+import argparse
+from collections import Counter
+from datetime import datetime, timezone
+import json
+from pathlib import Path
+from typing import Any
+import xml.etree.ElementTree as ET
+
+from evaluation.common import atomic_json, fingerprint, read_json
+
+ROOT = Path(__file__).resolve().parents[2]
+OWNER = "Chong Zhang"
+COURSE_WEEK = 7
+TOTAL_COURSE_WEEKS = 13
+EXPECTED_WEEK7_TASKS = ("QA-02", "QA-03", "QA-05", "CHAT-10")
+WEEK7_CARRY_FORWARD = ("QA-04", "QA-07", "QA-10")
+PUBLIC_PRIVATE_EVIDENCE = (
+    "evaluation/datasets/sciq_openqa.py",
+    "evaluation/runner.py",
+    "evaluation/BACKEND_PROTOCOL.md",
+)
+
+
+def _require(condition: bool, message: str) -> None:
+    if not condition:
+        raise ValueError(message)
+
+
+def _read_xml_test_count(path: Path) -> int:
+    root = ET.parse(path).getroot()
+    if "tests" in root.attrib:
+        return int(root.attrib["tests"])
+    suite = root.find("testsuite")
+    _require(suite is not None and "tests" in suite.attrib, "pytest.xml lacks a test count")
+    return int(suite.attrib["tests"])
+
+
+def _task_map(root: Path) -> dict[str, dict[str, Any]]:
+    tasks = read_json(root / "docs/execution/tasks.json")["tasks"]
+    return {task["task_id"]: task for task in tasks}
+
+
+def _chong_schedule(root: Path) -> list[dict[str, Any]]:
+    plan = read_json(root / "docs/execution/reporting_plan.json")
+    packages = [
+        package
+        for package in plan["weekly_work_packages"]
+        if package.get("accountable_owner") == OWNER
+    ]
+    packages.sort(key=lambda value: value["course_week"])
+    _require(packages, "No Chong Zhang schedule rows were found")
+    if packages[-1]["course_week"] < TOTAL_COURSE_WEEKS:
+        packages.append(
+            {
+                "course_week": TOTAL_COURSE_WEEKS,
+                "project_week": TOTAL_COURSE_WEEKS - 2,
+                "task_ids": ["QA-07", "QA-10"],
+                "work": (
+                    "Optional follow-up only: run live answer or independent human-review work "
+                    "only after those external inputs are actually available."
+                ),
+                "deliverables": ["evidence/research/", "docs/research/"],
+                "acceptance": "Do not convert missing live/human evidence into a pass.",
+                "reporting_view_only": True,
+            }
+        )
+    return packages
+
+
+def _week7_package(schedule: list[dict[str, Any]]) -> dict[str, Any]:
+    for package in schedule:
+        if package["course_week"] == COURSE_WEEK:
+            return package
+    raise ValueError("Week 7 schedule row is missing")
+
+
+def _software_gate(root: Path) -> dict[str, Any]:
+    gate = read_json(root / "evidence/final/software_gate.json")
+    _require(gate["status"] == "passed", "The public software gate is not passed")
+    _require(gate["source_files_unchanged"], "The gate reports source drift during execution")
+    _require(
+        all(check["exit_code"] == 0 for check in gate["checks"]),
+        "One or more software gate commands failed",
+    )
+    pytest_count = _read_xml_test_count(root / "evidence/final/pytest.xml")
+    return {
+        "status": gate["status"],
+        "executed_at": gate["executed_at"],
+        "mode": gate["mode"],
+        "check_count": len(gate["checks"]),
+        "python_test_count": pytest_count,
+        "source_files_unchanged": gate["source_files_unchanged"],
+        "separate_evidence_required": gate["separate_evidence_required"],
+    }
+
+
+def _sciq_rehearsal(root: Path) -> dict[str, Any]:
+    rehearsal = read_json(root / "evidence/sciq/technical-rehearsal.json")
+    results = rehearsal["results"]
+    _require(rehearsal["status"] == "completed", "SciQ technical rehearsal did not complete")
+    _require(rehearsal["model_mode"] == "mock", "Week 7 demo expects explicit mock answering")
+    _require(rehearsal["scheduled_count"] == 4 == len(results), "Unexpected rehearsal size")
+    _require(rehearsal["formal_quality_metrics"] is None, "Formal quality metrics are claimed")
+    _require(rehearsal["human_scores"] is None, "Human scores are claimed")
+    _require(
+        all(row.get("private_fields_absent_from_backend_command") is True for row in results),
+        "A backend command did not record the private-field boundary",
+    )
+    _require(
+        all(row.get("isolated_from_chat") is True for row in results),
+        "A rehearsal item was not isolated from learner chat",
+    )
+    by_protocol = Counter(row["protocol_id"] for row in results)
+    by_status = Counter((row["protocol_id"], row["status"]) for row in results)
+    _require(by_protocol == {"sciq_openqa": 2, "sciq_mcq": 2}, "Unexpected protocols")
+    _require(by_status[("sciq_openqa", "refused")] == 2, "OpenQA outcomes changed")
+    _require(by_status[("sciq_mcq", "completed")] == 2, "MCQ outcomes changed")
+    releases = sorted({row["release_id"] for row in results})
+    _require(len(releases) == 1, "Rehearsal results reference multiple corpus releases")
+    return {
+        "status": rehearsal["status"],
+        "model_mode": rehearsal["model_mode"],
+        "scheduled_count": rehearsal["scheduled_count"],
+        "protocol_outcomes": {
+            "sciq_openqa": {"refused": by_status[("sciq_openqa", "refused")]},
+            "sciq_mcq": {"completed": by_status[("sciq_mcq", "completed")]},
+        },
+        "corpus_release_id": releases[0],
+        "private_fields_absent_from_backend_command": True,
+        "isolated_from_chat": True,
+        "formal_quality_metrics": None,
+        "human_scores": None,
+    }
+
+
+def _qrel_pool(root: Path) -> dict[str, Any]:
+    pool = read_json(root / "evidence/retrieval/r0-late-review-pool.json")
+    _require(pool["status"] == "prepared_unreviewed", "R0 pool is not an unreviewed pool")
+    _require(pool["scheduled_judgements"] == 75, "Unexpected R0 qrel pool size")
+    _require(pool["judged_count"] == 0, "R0 qrel pool already contains grades")
+    _require(
+        pool["all_grades_and_reviewer_fields_null"] is True,
+        "R0 qrel pool does not preserve null review fields",
+    )
+    _require(pool["database_read_only"] is True, "R0 qrel pool was not prepared read-only")
+    return {
+        "status": pool["status"],
+        "version": pool["version"],
+        "scheduled_judgements": pool["scheduled_judgements"],
+        "judged_count": pool["judged_count"],
+        "pool_hash": pool["pool_hash"],
+        "source_release_id": pool["corpus_release_id"],
+        "active_release_unchanged": pool["active_release_unchanged"],
+        "manual_review_remaining": pool["manual_review_remaining"],
+        "grade_transfer_allowed": False,
+    }
+
+
+def _chunking_comparison(root: Path) -> dict[str, Any]:
+    comparison = read_json(root / "evidence/chunking/fixed-v5/comparison-summary.json")
+    _require(comparison["status"] == "passed", "Fixed chunking comparison did not pass")
+    _require(comparison["read_only"] is True, "Fixed chunking comparison was not read-only")
+    _require(
+        comparison["comparison_unactivated"] is True,
+        "Fixed chunking comparison unexpectedly changed the active release",
+    )
+    _require(
+        comparison["controlled_factor"] == "chunking strategy only",
+        "Comparison changes more than chunking strategy",
+    )
+    release_counts = comparison["release_counts"]
+    return {
+        "status": comparison["status"],
+        "baseline_release_id": comparison["baseline_release_id"],
+        "fixed_release_id": comparison["fixed_release_id"],
+        "controlled_factor": comparison["controlled_factor"],
+        "comparison_unactivated": comparison["comparison_unactivated"],
+        "book_count": len(comparison["books"]),
+        "structure_chunks": release_counts.get("structure", release_counts.get("baseline_chunks")),
+        "fixed_chunks": release_counts.get("fixed", release_counts.get("fixed_chunks")),
+        "human_qrels": comparison["human_qrels"],
+    }
+
+
+def _conversation_fixtures(root: Path) -> dict[str, Any]:
+    fixture = read_json(root / "evaluation/conversations/scenarios.json")
+    _require(fixture["family_count"] == 12, "Conversation fixture must keep 12 families")
+    _require(len(fixture["scenarios"]) == 12, "Conversation fixture scenario count changed")
+    return {
+        "family_count": fixture["family_count"],
+        "scenario_ids": [row["scenario_id"] for row in fixture["scenarios"]],
+        "semantic_correctness": None,
+    }
+
+
+def _task_statuses(root: Path) -> dict[str, dict[str, Any]]:
+    tasks = _task_map(root)
+    wanted = sorted(set(EXPECTED_WEEK7_TASKS) | set(WEEK7_CARRY_FORWARD))
+    return {
+        task_id: {
+            "status": tasks[task_id]["status"],
+            "implementation_status": tasks[task_id]["implementation_status"],
+            "verification_status": tasks[task_id]["verification_status"],
+            "research_status": tasks[task_id]["research_status"],
+            "human_review_status": tasks[task_id]["human_review_status"],
+            "remaining_scope": tasks[task_id].get("remaining_scope"),
+            "evidence": tasks[task_id].get("evidence_paths", tasks[task_id].get("evidence", [])),
+        }
+        for task_id in wanted
+    }
+
+
+def build_report(root: Path = ROOT) -> dict[str, Any]:
+    """Build and validate the public Week 7 status report."""
+
+    schedule = _chong_schedule(root)
+    week7 = _week7_package(schedule)
+    _require(
+        tuple(week7["task_ids"]) == EXPECTED_WEEK7_TASKS,
+        "Reporting plan no longer matches the expected Week 7 Chong allocation",
+    )
+    report = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "owner": OWNER,
+        "course_week": COURSE_WEEK,
+        "project_week": week7["project_week"],
+        "total_course_weeks": TOTAL_COURSE_WEEKS,
+        "instruction_handling": (
+            "Attached documents are treated as background evidence; the current user request "
+            "controls this generated local deliverable."
+        ),
+        "week7_reporting_allocation": {
+            "task_ids": week7["task_ids"],
+            "work": week7["work"],
+            "deliverables": week7["deliverables"],
+            "acceptance": week7["acceptance"],
+            "reporting_view_only": week7["reporting_view_only"],
+        },
+        "this_week_workload_split": [
+            {
+                "priority": "P0",
+                "share_percent": 35,
+                "focus": "Reproduce public/private boundary and small named technical run.",
+                "task_ids": ["QA-02", "QA-03", "QA-05"],
+            },
+            {
+                "priority": "P0",
+                "share_percent": 25,
+                "focus": "Run and explain all 12 authored conversation families as software checks.",
+                "task_ids": ["CHAT-10"],
+            },
+            {
+                "priority": "P1",
+                "share_percent": 20,
+                "focus": "Prepare v5/fixed-compatible qrel review without transferring old grades.",
+                "task_ids": ["QA-04"],
+            },
+            {
+                "priority": "P1",
+                "share_percent": 10,
+                "focus": "Draft E0/E1 freeze checklist for approved real answer-model execution.",
+                "task_ids": ["QA-07"],
+            },
+            {
+                "priority": "P2",
+                "share_percent": 10,
+                "focus": "Prepare blind-rating handoff; keep absent reviewer scores null.",
+                "task_ids": ["QA-10"],
+            },
+        ],
+        "remaining_13_week_schedule": [
+            {
+                "course_week": package["course_week"],
+                "project_week": package["project_week"],
+                "task_ids": package["task_ids"],
+                "work": package["work"],
+                "deliverables": package["deliverables"],
+                "acceptance": package["acceptance"],
+            }
+            for package in schedule
+            if package["course_week"] >= COURSE_WEEK
+        ],
+        "task_statuses": _task_statuses(root),
+        "success_demo": {
+            "software_gate": _software_gate(root),
+            "sciq_rehearsal": _sciq_rehearsal(root),
+            "r0_qrel_pool": _qrel_pool(root),
+            "fixed_chunking_comparison": _chunking_comparison(root),
+            "conversation_fixtures": _conversation_fixtures(root),
+            "public_private_evidence_paths": list(PUBLIC_PRIVATE_EVIDENCE),
+        },
+        "success_claim": {
+            "local_technical_demo_passed": True,
+            "live_answer_quality_measured": False,
+            "independent_relevance_judged": False,
+            "human_teaching_ratings_collected": False,
+            "claim_boundary": (
+                "This is a real local evidence demonstration of existing public artifacts and "
+                "Week 7 planning, not a claim of live answer quality or completed human review."
+            ),
+        },
+    }
+    report["report_hash"] = fingerprint(
+        {key: value for key, value in report.items() if key != "generated_at"}
+    )
+    return report
+
+
+def render_markdown(report: dict[str, Any]) -> str:
+    """Render a concise bilingual Week 7 plan and success demo."""
+
+    split_rows = "\n".join(
+        "| {priority} | {share_percent}% | {tasks} | {focus} |".format(
+            priority=row["priority"],
+            share_percent=row["share_percent"],
+            tasks=", ".join(row["task_ids"]),
+            focus=row["focus"],
+        )
+        for row in report["this_week_workload_split"]
+    )
+    schedule_rows = "\n".join(
+        "| {course_week} | {project_week} | {tasks} | {work} |".format(
+            course_week=row["course_week"],
+            project_week=row["project_week"],
+            tasks=", ".join(row["task_ids"]),
+            work=row["work"],
+        )
+        for row in report["remaining_13_week_schedule"]
+    )
+    statuses = report["task_statuses"]
+    status_rows = "\n".join(
+        "| {task} | {status} | {research} | {human} |".format(
+            task=task,
+            status=value["status"],
+            research=value["research_status"],
+            human=value["human_review_status"],
+        )
+        for task, value in statuses.items()
+    )
+    demo = report["success_demo"]
+    return f
+
+def write_outputs(report: dict[str, Any], root: Path = ROOT) -> dict[str, str]:
+    evidence_path = root / "evidence/week07/chong_zhang/week07_success_demo.json"
+    summary_path = root / "docs/week07/Chong_Zhang/Week07_Plan_Summary.md"
+    atomic_json(evidence_path, report)
+    summary_path.parent.mkdir(parents=True, exist_ok=True)
+    summary_path.write_text(render_markdown(report), encoding="utf-8", newline="\n")
+    return {
+        "evidence": evidence_path.relative_to(root).as_posix(),
+        "summary": summary_path.relative_to(root).as_posix(),
+        "report_hash": report["report_hash"],
+    }
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--root", type=Path, default=ROOT)
+    parser.add_argument("--check-only", action="store_true")
+    args = parser.parse_args(argv)
+    root = args.root.resolve()
+    report = build_report(root)
+    output = {"status": "passed", "report_hash": report["report_hash"]}
+    if not args.check_only:
+        output |= write_outputs(report, root)
+    print(json.dumps(output, ensure_ascii=False, sort_keys=True))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
