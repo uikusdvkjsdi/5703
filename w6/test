@@ -1,0 +1,180 @@
+from __future__ import annotations
+
+from pathlib import Path
+import json
+
+import pytest
+
+from scripts.verify.chong_week07_success import build_report, write_outputs
+
+
+def write_json(path: Path, value: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2), encoding="utf-8")
+
+
+def make_fixture(root: Path) -> None:
+    write_json(
+        root / "docs/execution/reporting_plan.json",
+        {
+            "weekly_work_packages": [
+                {
+                    "course_week": 7,
+                    "project_week": 5,
+                    "task_ids": ["QA-02", "QA-03", "QA-05", "CHAT-10"],
+                    "work": "Run 12 conversation families and recovery negatives.",
+                    "deliverables": ["evaluation/conversations/", "tests/e2e/"],
+                    "acceptance": "Label live semantic checks separately.",
+                    "accountable_owner": "Chong Zhang",
+                    "reporting_view_only": True,
+                },
+                {
+                    "course_week": 8,
+                    "project_week": 6,
+                    "task_ids": ["QA-04", "QA-06", "CHAT-09", "QA-07", "QA-08"],
+                    "work": "Freeze coverage review and run manifests.",
+                    "deliverables": ["evaluation/runner/", "evaluation/analysis/"],
+                    "acceptance": "Failures/refusals remain in N.",
+                    "accountable_owner": "Chong Zhang",
+                    "reporting_view_only": True,
+                },
+            ]
+        },
+    )
+    tasks = []
+    for task_id, status in {
+        "QA-02": "REAL_FLOW_VERIFIED",
+        "QA-03": "MOCK_TEST_PASSED",
+        "QA-04": "IMPLEMENTED_UNVERIFIED",
+        "QA-05": "MOCK_TEST_PASSED",
+        "QA-07": "WAITING_EXTERNAL",
+        "QA-10": "WAITING_EXTERNAL",
+        "CHAT-10": "MOCK_TEST_PASSED",
+    }.items():
+        tasks.append(
+            {
+                "task_id": task_id,
+                "status": status,
+                "implementation_status": status,
+                "verification_status": status,
+                "research_status": "WAITING_EXTERNAL"
+                if task_id in {"QA-04", "QA-07", "QA-10"}
+                else "NOT_ASSESSED",
+                "human_review_status": "WAITING_EXTERNAL",
+                "remaining_scope": "external work remains",
+                "evidence_paths": [],
+            }
+        )
+    write_json(root / "docs/execution/tasks.json", {"tasks": tasks})
+    write_json(
+        root / "evidence/final/software_gate.json",
+        {
+            "status": "passed",
+            "mode": "mock",
+            "executed_at": "2026-09-08T09:30:59+00:00",
+            "source_files_unchanged": True,
+            "checks": [{"name": "python_tests", "exit_code": 0}],
+            "separate_evidence_required": ["live scientific evaluation"],
+        },
+    )
+    (root / "evidence/final").mkdir(parents=True, exist_ok=True)
+    (root / "evidence/final/pytest.xml").write_text(
+        '<testsuites><testsuite name="pytest" tests="231"/></testsuites>',
+        encoding="utf-8",
+    )
+    write_json(
+        root / "evidence/sciq/technical-rehearsal.json",
+        {
+            "status": "completed",
+            "model_mode": "mock",
+            "scheduled_count": 4,
+            "formal_quality_metrics": None,
+            "human_scores": None,
+            "results": [
+                rehearsal_row("sciq_openqa", "refused"),
+                rehearsal_row("sciq_openqa", "refused"),
+                rehearsal_row("sciq_mcq", "completed"),
+                rehearsal_row("sciq_mcq", "completed"),
+            ],
+        },
+    )
+    write_json(
+        root / "evidence/retrieval/r0-late-review-pool.json",
+        {
+            "status": "prepared_unreviewed",
+            "version": "v1",
+            "scheduled_judgements": 75,
+            "judged_count": 0,
+            "all_grades_and_reviewer_fields_null": True,
+            "database_read_only": True,
+            "pool_hash": "pool",
+            "corpus_release_id": "old-release",
+            "active_release_unchanged": "active-release",
+            "manual_review_remaining": "needed",
+        },
+    )
+    write_json(
+        root / "evidence/chunking/fixed-v5/comparison-summary.json",
+        {
+            "status": "passed",
+            "read_only": True,
+            "comparison_unactivated": True,
+            "controlled_factor": "chunking strategy only",
+            "baseline_release_id": "active-release",
+            "fixed_release_id": "fixed-release",
+            "books": [{}, {}, {}, {}],
+            "release_counts": {"baseline_chunks": 10594, "fixed_chunks": 11461},
+            "human_qrels": None,
+        },
+    )
+    write_json(
+        root / "evaluation/conversations/scenarios.json",
+        {"family_count": 12, "scenarios": [{"scenario_id": f"s{i}"} for i in range(12)]},
+    )
+
+
+def rehearsal_row(protocol_id: str, status: str) -> dict:
+    return {
+        "protocol_id": protocol_id,
+        "status": status,
+        "release_id": "active-release",
+        "private_fields_absent_from_backend_command": True,
+        "isolated_from_chat": True,
+    }
+
+
+def test_build_report_keeps_success_claims_scoped(tmp_path: Path):
+    make_fixture(tmp_path)
+    report = build_report(tmp_path)
+    assert report["week7_reporting_allocation"]["task_ids"] == [
+        "QA-02",
+        "QA-03",
+        "QA-05",
+        "CHAT-10",
+    ]
+    assert report["success_demo"]["r0_qrel_pool"]["judged_count"] == 0
+    assert report["success_claim"]["local_technical_demo_passed"] is True
+    assert report["success_claim"]["live_answer_quality_measured"] is False
+    assert report["success_claim"]["human_teaching_ratings_collected"] is False
+
+
+def test_build_report_rejects_private_boundary_regression(tmp_path: Path):
+    make_fixture(tmp_path)
+    path = tmp_path / "evidence/sciq/technical-rehearsal.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data["results"][0]["private_fields_absent_from_backend_command"] = False
+    write_json(path, data)
+    with pytest.raises(ValueError, match="private-field boundary"):
+        build_report(tmp_path)
+
+
+def test_write_outputs_creates_week07_files(tmp_path: Path):
+    make_fixture(tmp_path)
+    report = build_report(tmp_path)
+    output = write_outputs(report, tmp_path)
+    assert output["evidence"] == "evidence/week07/chong_zhang/week07_success_demo.json"
+    assert output["summary"] == "docs/week07/Chong_Zhang/Week07_Plan_Summary.md"
+    assert (tmp_path / output["evidence"]).exists()
+    summary = (tmp_path / output["summary"]).read_text(encoding="utf-8")
+    assert "本周任务分配" in summary
+    assert "does not claim live answer correctness" in summary
