@@ -1,0 +1,4 @@
+# Optional acquisition-only Parquet reader; the application does not require SciQ.
+# PyPI verified 2026-09-08; CPython 3.13 Windows x64 wheel SHA-256:
+# 31e49a7888fcdf3a835da33ae777f6bb9a866334e5a789282fc26dcf426f7f15
+pyarrow==25.0.1

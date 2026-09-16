@@ -1,0 +1,31 @@
+{
+  "repository": "allenai/sciq",
+  "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+  "source_homepage": "https://allenai.org/data/sciq",
+  "repository_url": "https://huggingface.co/datasets/allenai/sciq",
+  "paper_url": "https://aclanthology.org/W17-4413/",
+  "license": "cc-by-nc-3.0",
+  "splits": {
+    "train": {
+      "count": 11679,
+      "path": "data/train-00000-of-00001.parquet",
+      "size_bytes": 3993099,
+      "sha256": "19644360954006d06e9ad3df07bddb34f8535c081b831d48f604603c713ac167"
+    },
+    "validation": {
+      "count": 1000,
+      "path": "data/validation-00000-of-00001.parquet",
+      "size_bytes": 338503,
+      "sha256": "455dd9f1d725cd3ecbce369799a2fbbdbbfecf51ab84a86d56ba3370dc847b8a"
+    },
+    "test": {
+      "count": 1000,
+      "path": "data/test-00000-of-00001.parquet",
+      "size_bytes": 342808,
+      "sha256": "3a719356a29b127fc54ef3c7f51a034db4bd105d5717215e8c85d2aa58d60667"
+    }
+  },
+  "private_fields": ["correct_answer", "support", "distractor1", "distractor2", "distractor3"],
+  "mcq_exception": "Four candidate texts may enter the MCQ command; the correct-label mapping remains evaluator-only.",
+  "acquisition_purpose": "Evaluator-only dataset preparation; no corpus ingestion or model accuracy claim."
+}

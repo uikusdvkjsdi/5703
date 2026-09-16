@@ -1,0 +1,9 @@
+{
+  "version":"authored-integration-sources-v1",
+  "kind":"authored_software_fixture_not_an_OpenStax_edition",
+  "passages":[
+    {"topic":"photosynthesis","title":"Authored biology integration notes","section":"Photosynthesis","text":"Photosynthesis captures light energy and stores it as chemical energy in sugars. In plants, photosynthesis occurs in chloroplasts. Carbon dioxide and water are used to produce sugars, and oxygen is released. Light supplies energy for this process. The stored chemical energy can be used later by the plant."},
+    {"topic":"respiration","title":"Authored biology integration notes","section":"Cellular respiration","text":"Cellular respiration releases energy from organic molecules such as glucose. In eukaryotic cells, major stages of aerobic respiration occur in mitochondria. Photosynthesis stores captured energy in sugars; respiration makes energy from those organic molecules available for cellular work."},
+    {"topic":"diffusion","title":"Authored biology integration notes","section":"Diffusion","text":"Diffusion is the net movement of particles from a region of higher concentration to a region of lower concentration. This net movement follows a concentration gradient. A drop of dye spreading through still water is an example: dye particles disperse from the concentrated drop into surrounding water."}
+  ]
+}

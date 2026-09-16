@@ -1,0 +1,18 @@
+{
+  "version":"authored-conversation-review-v1",
+  "boundary":"Evaluator-only expectations. Never append these claims to a chat request or corpus index.",
+  "scenarios":{
+    "concept":{"reference_claims":["Photosynthesis stores light-derived energy in sugars","Plants use carbon dioxide and water"],"requires_context_after_first":true},
+    "why_how":{"reference_claims":["Light supplies energy for photosynthesis","Sugars store chemical energy"],"requires_context_after_first":true},
+    "pronoun":{"reference_claims":["The pronoun it refers to photosynthesis","Plant photosynthesis occurs in chloroplasts"],"requires_context_after_first":true},
+    "simplification":{"reference_claims":["Rephrasing preserves supported meaning","Reused passages are included with current-request citation IDs"],"requires_context_after_first":true},
+    "example":{"reference_claims":["The example concerns net movement from high to low concentration"],"requires_context_after_first":true},
+    "comparison":{"reference_claims":["Photosynthesis stores chemical energy","Respiration releases energy from organic molecules"],"requires_context_after_first":true},
+    "topic_switch":{"reference_claims":["After the explicit switch, this new topic refers to diffusion"],"requires_context_after_first":true},
+    "ambiguity":{"response_types":{"0":"clarification","2":"social"},"reference_claims":["No source-free missing topic is invented"]},
+    "correction":{"reference_claims":["Chloroplasts rather than mitochondria are the photosynthetic organelles","The user's earlier error is not evidence"],"requires_context_after_first":true},
+    "missing_evidence":{"response_types":{"0":"refusal"},"reference_claims":["Unsupported lottery prediction is refused","Topic switch permits a later grounded photosynthesis response"]},
+    "long_history":{"reference_claims":["History and summary do not duplicate the same prefix","If an old referent is unavailable, ask instead of inventing recall"],"requires_context_after_first":true,"requires_summary_or_recorded_budget_exclusion":true},
+    "profile_continuity":{"reference_claims":["Temporary simpler wording does not change the saved profile","Profile off preserves history","New session has no prior transcript"],"new_session_turn":3,"profile_off_turn":2}
+  }
+}

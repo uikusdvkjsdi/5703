@@ -1,0 +1,15 @@
+{
+  "protocol_id":"sciq_openqa",
+  "condition":"E1",
+  "dataset_path":"../../evaluation/private_fixture/sciq_authored.json",
+  "dataset_revision":"authored-fixture-v1",
+  "split":"authored",
+  "expected_count":4,
+  "seed":5703,
+  "code_revision":"workspace-development-uncommitted",
+  "configuration":{"retrieval_variant":"R0","model_mode":"mock"},
+  "backend_factory":"app.modules.experiment.bridge:create_backend",
+  "backend_options":{},
+  "private_root":"../../evaluation/private_runs",
+  "full_response_review_count":4
+}

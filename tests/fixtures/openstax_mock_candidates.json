@@ -1,0 +1,1260 @@
+{
+  "source_path": "evidence/openstax/retrieval-before-fix.json",
+  "source_sha256": "1d6e76d74f36e17ca46b561e53618c7edf9797f86126922e9ddd0f912cefb19a",
+  "release_id": "39483e7f-efbe-42e7-855e-469fd924383e",
+  "scope": "Unmodified recorded real E5/pgvector hits for mock lexical-guard regression, not gold relevance or answer evaluation. All original hit metadata and exact text hashes retained.",
+  "questions": [
+    {
+      "category": "anatomy",
+      "question": "How does negative feedback maintain homeostasis?",
+      "elapsed_seconds": 18.041,
+      "hits": [
+        {
+          "chunk_id": "3c57a09fd8aef80ca82b1672bf6305a854bd",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 33 The Animal Body: Basic Form and Function / 33.3 Homeostasis",
+          "pages": [
+            988
+          ],
+          "locator": "Chapter 33 The Animal Body: Basic Form and Function / 33.3 Homeostasis; PDF physical pages 988; Figures or formulas may require viewing the original PDF.",
+          "text": "is maintained by negative feedback loops. Positive feedback loops actually push the organism further out of homeostasis, but may be necessary for life to occur. Homeostasis is controlled by the nervous and endocrine system of mammals. Negative Feedback Mechanisms Any homeostatic process that changes the direction of the stimulus is a negative feedback loop. It may either increase or decrease the stimulus, but the stimulus is not allowed to continue as it did before the receptor sensed it. In other words, if a level is too high, the body does something to bring it down, and conversely, if a level is too low, the body does something to make it go up. Hence the term negative feedback. An example is animal maintenance of blood glucose levels. When an animal has eaten, blood glucose levels rise. This is sensed by the nervous system. Specialized cells in the pancreas sense this, and the hormone insulin is released by the endocrine system. Insulin causes blood glucose levels to decrease, as would be expected in a negative feedback system, as illustrated in Figure 33.20. However, if an animal has not eaten and blood glucose levels decrease, this is sensed in another group of cells in the pancreas, and the hormone glucagon is released causing glucose levels to increase. This is still a negative feedback loop, but not in the direction expected by the use of the term “negative.” Another example of an increase as a result of the feedback loop is the control of blood calcium. If calcium levels decrease, specialized cells in the parathyroid gland sense this",
+          "text_hash": "59330c52678997ad81fe99c72e9eb2ca4a9b2880d22335cb97e657294bd9d2b9",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.9014598940314434,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "acd9b2626177a75aa68c451e190e159dd17d",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 1 An Introduction to the Human Body / 1.5 Homeostasis",
+          "pages": [
+            36
+          ],
+          "locator": "Chapter 1 An Introduction to the Human Body / 1.5 Homeostasis; PDF physical pages 36; Figures or formulas may require viewing the original PDF.",
+          "text": "1.5 Homeostasis LEARNING OBJECTIVES By the end of this section, you will be able to: • Discuss the role of homeostasis in healthy functioning • Contrast negative and positive feedback, giving one physiologic example of each mechanism Maintaining homeostasis requires that the body continuously monitor its internal conditions. From body temperature to blood pressure to levels of certain nutrients, each physiological condition has a particular set point. A set point is the physiological value around which the normal range fluctuates. A normal range is the restricted set of values that is optimally healthful and stable. For example, the set point for normal human body temperature is approximately 37°C (98.6°F) Physiological parameters, such as body temperature and blood pressure, tend to fluctuate within a normal range a few degrees above and below that point. Control centers in the brain and other parts of the body monitor and react to deviations from homeostasis using negative feedback. Negative feedback is a mechanism that reverses a deviation from the set point. Therefore, negative feedback maintains body parameters within their normal range. The maintenance of homeostasis by negative feedback goes on throughout the body at all times, and an understanding of negative feedback is thus fundamental to an understanding of human physiology. Negative Feedback A negative feedback system has three basic components (Figure 1.10a). A sensor, also referred to a receptor, is a component of a feedback system that monitors a physiological value. This value is reported to the control center. The control center is the component in a feedback system that",
+          "text_hash": "d93a448225e55c85fad9922972241762ab554aae86c824ea2008bf225da64db2",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8994843415725802,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "d4236e14296ef0dd907190096cda237f58e7",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 1 An Introduction to the Human Body / 1.5 Homeostasis",
+          "pages": [
+            38
+          ],
+          "locator": "Chapter 1 An Introduction to the Human Body / 1.5 Homeostasis; PDF physical pages 38; Figures or formulas may require viewing the original PDF.",
+          "text": "life of a person giving birth and the baby are at risk. The extreme muscular work of labor and delivery are the result of a positive feedback system (Figure 1.11). FIGURE 1.11 Positive Feedback Loop Normal childbirth is driven by a positive feedback loop. A positive feedback loop results in a change in the body’s status, rather than a return to homeostasis. The first contractions of labor (the stimulus) push the baby toward the cervix (the lowest part of the uterus). The cervix contains stretch-sensitive nerve cells that monitor the degree of stretching (the sensors). These nerve cells send messages to the brain, which in turn causes the pituitary gland at the base of the brain to release the hormone oxytocin into the bloodstream. Oxytocin causes stronger contractions of the smooth muscles in the uterus (the effectors), pushing the baby further down the birth canal. This causes even greater stretching of the cervix. The cycle of stretching, oxytocin release, and increasingly more forceful contractions stops only when the baby is born. At this point, the stretching of the cervix halts, stopping the release of oxytocin. A second example of positive feedback centers on reversing extreme damage to the body. Following a penetrating wound, the most immediate threat is excessive blood loss. Less blood circulating means reduced blood pressure and reduced perfusion (penetration of blood) to the brain and other vital organs. If perfusion is severely",
+          "text_hash": "5e18b26ca1c054b04aca317e6445d4fcee5deb8b2a730d9d77127c0113add1a0",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.891662104048468,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "41f0c4c0763b48ec0ea5354aa61f4ca61f75",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 17 The Endocrine System / 17.2 Hormones",
+          "pages": [
+            705
+          ],
+          "locator": "Chapter 17 The Endocrine System / 17.2 Hormones; PDF physical pages 705; Figures or formulas may require viewing the original PDF.",
+          "text": "begins to signal the uterine muscles to contract, which pushes the fetus toward the cervix, causing it to stretch. This, in turn, signals the pituitary gland to release more oxytocin, causing labor contractions to intensify. The release of oxytocin decreases after the birth of the child. The more common method of hormone regulation is the negative feedback loop. Negative feedback is characterized by the inhibition of further secretion of a hormone in response to adequate levels of that hormone. This allows blood levels of the hormone to be regulated within a narrow range. An example of a negative feedback loop is the release of glucocorticoid hormones from the adrenal glands, as directed by the hypothalamus and pituitary gland. As glucocorticoid concentrations in the blood rise, the hypothalamus and pituitary gland reduce their signaling to the adrenal glands to prevent additional glucocorticoid secretion (Figure 17.6).",
+          "text_hash": "05710b08494e61f79bbbb7ae4b51824872822b69886882c316c626ac15496414",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8913131189017642,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "200a6ba04add2422cde16b58340fff8a7407",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 1 An Introduction to the Human Body / Chapter Review",
+          "pages": [
+            51
+          ],
+          "locator": "Chapter 1 An Introduction to the Human Body / Chapter Review; PDF physical pages 51; Figures or formulas may require viewing the original PDF.",
+          "text": "Homeostasis Homeostasis is the activity of cells throughout the body to maintain the physiological state within a narrow range that is compatible with life. Homeostasis is regulated by negative feedback loops and, much less frequently, by positive feedback loops. Both have the same components of a stimulus, sensor, control center, and effector; however, negative feedback loops work to prevent an excessive response to the stimulus, whereas positive feedback loops intensify the response until an end point is reached. 1.6 Anatomical Terminology Ancient Greek and Latin words are used to build anatomical terms. A standard reference position for mapping the body’s structures is the normal anatomical position. Regions of the body are identified using terms such as “occipital” that are more precise than common words and phrases such as “the back of the head.” Directional terms such as anterior and posterior are essential for accurately describing the relative locations of body structures. Images of the body’s interior commonly align along one of three planes: the sagittal, frontal, or transverse. The body’s organs are organized in one of two main cavities—dorsal (also referred to posterior) and ventral (also referred to anterior)—which are further sub-divided according to the structures present in each area. The serous membranes have two layers—parietal and visceral—surrounding a fluid filled space. Serous membranes cover the lungs (pleural serosa), heart (pericardial serosa), and some abdominopelvic organs (peritoneal",
+          "text_hash": "542926a64cdea1cb7a2aff0c20bb11c709162a0cfc5af4ff9a0689d8e2af62bf",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8910602791579076,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Actual ranked source candidates; original physical PDF locations are retained."
+    },
+    {
+      "category": "anatomy",
+      "question": "What are the functions of erythrocytes, leukocytes and platelets?",
+      "elapsed_seconds": 13.768,
+      "hits": [
+        {
+          "chunk_id": "e405447bff64cbd263a8a04c07b1432ccd1b",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 18 The Cardiovascular System: Blood / 18.4 Leukocytes and Platelets",
+          "pages": [
+            763
+          ],
+          "locator": "Chapter 18 The Cardiovascular System: Blood / 18.4 Leukocytes and Platelets; PDF physical pages 763; Figures or formulas may require viewing the original PDF.",
+          "text": "18.4 Leukocytes and Platelets LEARNING OBJECTIVES By the end of this section, you will be able to: • Describe the general characteristics of leukocytes • Classify leukocytes according to their lineage, their main structural features, and their primary functions • Discuss the most common malignancies involving leukocytes • Identify the lineage, basic structure, and function of platelets The leukocyte, commonly known as a white blood cell (or WBC), is a major component of the body’s defenses against disease. Leukocytes protect the body against invading microorganisms and body cells with mutated DNA, and they clean up debris. Platelets are essential for the repair of blood vessels when damage to them has occurred; they also provide growth factors for healing and repair. See Figure 18.5 for a summary of leukocytes and platelets. Characteristics of Leukocytes Although leukocytes and erythrocytes both originate from hematopoietic stem cells in the bone marrow, they are very different from each other in many significant ways. For instance, leukocytes are far less numerous than erythrocytes: Typically there are only 5000 to 10,000 per µL. They are also larger than erythrocytes and are the only formed elements that are complete cells, possessing a nucleus and organelles. And although there is just one type",
+          "text_hash": "b05db4eeddbf88e7333c49887feeddf138244abc784977f9a67a3d46a7db51d4",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.9094443290738489,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "3ddfb9de767afcd131aedf4753bc1cd874cc",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 18 The Cardiovascular System: Blood / 18.4 Leukocytes and Platelets",
+          "pages": [
+            763,
+            764
+          ],
+          "locator": "Chapter 18 The Cardiovascular System: Blood / 18.4 Leukocytes and Platelets; PDF physical pages 763, 764; Figures or formulas may require viewing the original PDF.",
+          "text": "there are only 5000 to 10,000 per µL. They are also larger than erythrocytes and are the only formed elements that are complete cells, possessing a nucleus and organelles. And although there is just one type\n\nof erythrocyte, there are many types of leukocytes. Most of these types have a much shorter lifespan than that of erythrocytes, some as short as a few hours or even a few minutes in the case of acute infection. One of the most distinctive characteristics of leukocytes is their movement. Whereas erythrocytes spend their days circulating within the blood vessels, leukocytes routinely leave the bloodstream to perform their defensive functions in the body’s tissues. For leukocytes, the vascular network is simply a highway they travel and soon exit to reach their true destination. When they arrive, they are often given distinct names, such as macrophage or microglia, depending on their function. As shown in Figure 18.10, they leave the capillaries—the smallest blood vessels—or other small vessels through a process known as emigration (from the Latin for “removal”) or diapedesis (dia- = “through”; -pedan = “to leap”) in which they squeeze through adjacent cells in a blood vessel wall. Once they have exited the capillaries, some leukocytes will take up fixed positions in lymphatic tissue, bone marrow, the spleen, the thymus, or other organs. Others will move about through the tissue spaces very much like",
+          "text_hash": "ea1a8f414c8aee890d9e10a32eaccf0e71ce7ef574aa8f78430c366dd7135445",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8974030138569927,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "5ca888d8a6df78aad12341830a43f54f8ec1",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 33 The Animal Body: Basic Form and Function / 33.2 Animal Primary Tissues",
+          "pages": [
+            985
+          ],
+          "locator": "Chapter 33 The Animal Body: Basic Form and Function / 33.2 Animal Primary Tissues; PDF physical pages 985; Figures or formulas may require viewing the original PDF.",
+          "text": "oxygen and carbon dioxide. Also present are various leukocytes (white blood cells) involved in immune response. The cell found in greatest abundance in blood is the erythrocyte. Erythrocytes are counted in millions in a blood sample: the average number of red blood cells in primates is 4.7 to 5.5 million cells per microliter. Erythrocytes are consistently the same size in a species, but vary in size between species. For example, the average diameter of a primate red blood cell is 7.5 µm, a dog is close at 7.0 µm, but a cat’s RBC diameter is 5.9 µm. Sheep erythrocytes are even smaller at 4.6 µm. Mammalian erythrocytes lose their nuclei and mitochondria when they are released from the bone marrow where they are made. Fish, amphibian, and avian red blood cells maintain their nuclei and mitochondria throughout the cell’s life. The principal job of an erythrocyte is to carry and deliver oxygen to the tissues. Leukocytes are the predominant white blood cells found in the peripheral blood. Leukocytes are counted in the thousands in the blood with measurements expressed as ranges: primate counts range from 4,800 to 10,800 cells per µl, dogs from 5,600 to 19,200 cells per µl, cats from 8,000 to 25,000 cells per µl, cattle from 4,000 to 12,000 cells per",
+          "text_hash": "df4c1bd1a6932d44aaeeb92b3d9f681d1870ba137bf6dfc6d99c42b632c4040d",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8954135067302281,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "b8ba4f8ee4d881384c1c30b21a9b923dc9ba",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 18 The Cardiovascular System: Blood / Chapter Review",
+          "pages": [
+            783
+          ],
+          "locator": "Chapter 18 The Cardiovascular System: Blood / Chapter Review; PDF physical pages 783; Figures or formulas may require viewing the original PDF.",
+          "text": "or used by the bone marrow for production of new erythrocytes; and the remnants of heme are converted into bilirubin, or other waste products that are taken up by the liver and excreted in the bile or removed by the kidneys. Anemia is a deficiency of RBCs or hemoglobin, whereas polycythemia is an excess of RBCs. 18.4 Leukocytes and Platelets Leukocytes function in body defenses. They squeeze out of the walls of blood vessels through emigration or diapedesis, then may move through tissue fluid or become attached to various organs where they fight against pathogenic organisms, diseased cells, or other threats to health. Granular leukocytes, which include neutrophils, eosinophils, and basophils, originate with myeloid stem cells, as do the agranular monocytes. The other agranular leukocytes, NK cells, B cells, and T cells, arise from the lymphoid stem cell line. The most abundant leukocytes are the neutrophils, which are first responders to infections, especially with bacteria. About 20–30 percent of all leukocytes are lymphocytes, which are critical to the body’s defense against specific threats. Leukemia and lymphoma are malignancies involving leukocytes. Platelets are fragments of cells known as megakaryocytes that dwell within the bone marrow. While many platelets are stored in the spleen, others enter",
+          "text_hash": "3092f302c0022c3119f8972d77b7e9aa9e02c7bd6de09fa1b1d5caccf1733682",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8951270618840826,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "3fd1471081a4be9fce319b1a2b040012a47b",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 18 The Cardiovascular System: Blood / 18.3 Erythrocytes — Image text transcription",
+          "pages": [
+            756
+          ],
+          "locator": "Chapter 18 The Cardiovascular System: Blood / 18.3 Erythrocytes — Image text transcription; PDF physical pages 756; Figures or formulas may require viewing the original PDF.",
+          "text": "Formed element | Major subtypes | Numbers present per microliter (μL) and mean (range) | Appearance in a standard blood smear | Summary of functions | Comments\n\nErythrocytes (red blood cells) | [blank cell] | 5.2 million (4.4–6.0 million) | Flattened biconcave disk; no nucleus; pale red color | Transport oxygen and some carbon dioxide between tissues and lungs | Lifespan of approximately 120 days\n\nLeukocytes (white blood cells) | [blank cell] | 7000 (5000–10,000) | Obvious dark-staining nucleus | All function in body defenses | Exit capillaries and move into tissues; lifespan of usually a few hours or days\n\nLeukocytes (white blood cells) | Granulocytes including neutrophils, eosinophils, and basophils | 4360 (1800–9950) | Abundant granules in cytoplasm; nucleus normally lobed | Nonspecific (innate) resistance to disease | Classified according to membrane-bound granules in cytoplasm\n\nLeukocytes (white blood cells) | Neutrophils | 4150 (1800–7300) | Nuclear lobes increase with age; pale lilac granules | Phagocytic; particularly effective against bacteria. Release cytotoxic chemicals from granules | Most common leukocyte; lifespan of minutes to days",
+          "text_hash": "abb4d9c9028554d8fed5f4de043cd027017020ac5daa6fee4189758a3bb201ca",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8933425857367924,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Actual ranked source candidates; original physical PDF locations are retained."
+    },
+    {
+      "category": "biology",
+      "question": "How does glycolysis produce ATP from glucose?",
+      "elapsed_seconds": 13.545,
+      "hits": [
+        {
+          "chunk_id": "b04997ecf54d05c34bd3d3aae0b6ffb665aa",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 4 How Cells Obtain Energy / 4.2 Glycolysis",
+          "pages": [
+            116,
+            117
+          ],
+          "locator": "Chapter 4 How Cells Obtain Energy / 4.2 Glycolysis; PDF physical pages 116, 117; Figures or formulas may require viewing the original PDF.",
+          "text": "results in a high-energy bond. Phosphate groups are negatively charged and thus repel one another when they are arranged in series, as they are in ADP and ATP. This repulsion makes the ADP and ATP molecules inherently unstable. The release of one or two phosphate groups from ATP, a process called hydrolysis, releases energy. Glycolysis You have read that nearly all of the energy used by living things comes to them in the bonds of the sugar, glucose.\n\nGlycolysis is the first step in the breakdown of glucose to extract energy for cell metabolism. Many living organisms carry out glycolysis as part of their metabolism. Glycolysis takes place in the cytoplasm of most prokaryotic and all eukaryotic cells. Glycolysis begins with the six-carbon, ring-shaped structure of a single glucose molecule and ends with two molecules of a three-carbon sugar called pyruvate in a multi-step process with several intermediate molecules. Glycolysis consists of two distinct phases. In the first part of the glycolysis pathway, energy is used to make adjustments so that the six-carbon sugar molecule can be split evenly into two three-carbon pyruvate molecules. In the second part of glycolysis, ATP and nicotinamide-adenine dinucleotide (NADH) are produced (Figure 4.13). If the cell cannot catabolize the pyruvate molecules further, it will harvest only two ATP molecules from one molecule of",
+          "text_hash": "bc1a1a21995021168d3da4ba5cafdc75b832f3b61ee7029acc978ff316df0a07",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.9172518418808804,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "ef7f84ff5454b8642d22452d8ce464d05183",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 4 How Cells Obtain Energy / 4.2 Glycolysis",
+          "pages": [
+            117
+          ],
+          "locator": "Chapter 4 How Cells Obtain Energy / 4.2 Glycolysis; PDF physical pages 117; Figures or formulas may require viewing the original PDF.",
+          "text": "dinucleotide (NADH) are produced (Figure 4.13). If the cell cannot catabolize the pyruvate molecules further, it will harvest only two ATP molecules from one molecule of glucose. For example, mature mammalian red blood cells are only capable of glycolysis, which is their sole source of ATP. If glycolysis is interrupted, these cells would eventually die. FIGURE 4.13 In glycolysis, a glucose molecule is converted into two pyruvate molecules in a multi-step process and several intermediate molecules (glyceraldehyde 3-phosphate is indicated as one of them).",
+          "text_hash": "596a20d25bbf5e9e87c7fe819b8a07a6c982d111ad8612cec40951387f614a4c",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.9130983586458579,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "1d538809daaa3dc978336be8f7295d94157d",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 24 Metabolism and Nutrition / 24.2 Carbohydrate Metabolism",
+          "pages": [
+            1115
+          ],
+          "locator": "Chapter 24 Metabolism and Nutrition / 24.2 Carbohydrate Metabolism; PDF physical pages 1115; Figures or formulas may require viewing the original PDF.",
+          "text": "and into the mitochondrial matrix. As the H+ ions traverse the complex, the shaft of the complex rotates. This rotation enables other portions of ATP synthase to encourage ADP and Pi to create ATP. In accounting for the total number of ATP produced per glucose molecule through aerobic respiration, it is important to remember the following points: • A net of two ATP are produced through glycolysis (four produced and two consumed during the energy-consuming stage). However, these two ATP are used for transporting the NADH produced during glycolysis from the cytoplasm into the mitochondria. Therefore, the net production of ATP during glycolysis is zero. • In all phases after glycolysis, the number of ATP, NADH, and FADH2 produced must be multiplied by two to reflect how each glucose molecule produces two pyruvate molecules. • In the ETC, about three ATP are produced for every oxidized NADH. However, only about two ATP are produced for every oxidized FADH2. The electrons from FADH2 produce less ATP, because they start at a lower point in the ETC (Complex II) compared to the electrons from NADH (Complex I) (see Figure 24.8). Therefore, for every glucose molecule that enters aerobic respiration, a net total of 36 ATPs are produced (Figure 24.9).",
+          "text_hash": "c1535a7ba798999ab034b135ab4abb7dd90f7616456aafa57ae40fdce5413753",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.909827674262063,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "fec813585e60e92cc066b4f0fed42dbb91c4",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 4 How Cells Obtain Energy / 4.2 Glycolysis",
+          "pages": [
+            116
+          ],
+          "locator": "Chapter 4 How Cells Obtain Energy / 4.2 Glycolysis; PDF physical pages 116; Figures or formulas may require viewing the original PDF.",
+          "text": "4.2 Glycolysis LEARNING OBJECTIVES By the end of this section, you will be able to: • Explain how ATP is used by the cell as an energy source • Describe the overall result in terms of molecules produced of the breakdown of glucose by glycolysis Even exergonic, energy-releasing reactions require a small amount of activation energy to proceed. However, consider endergonic reactions, which require much more energy input because their products have more free energy than their reactants. Within the cell, where does energy to power such reactions come from? The answer lies with an energy-supplying molecule called adenosine triphosphate, or ATP. ATP is a small, relatively simple molecule, but within its bonds contains the potential for a quick burst of energy that can be harnessed to perform cellular work. This molecule can be thought of as the primary energy currency of cells in the same way that money is the currency that people exchange for things they need. ATP is used to power the majority of energy-requiring cellular reactions. ATP in Living Systems A living cell cannot store significant amounts of free energy. Excess free energy would result in an increase of heat in the cell, which would denature enzymes and other proteins, and thus destroy the cell. Rather, a cell must be able to store energy safely and release it for use only as needed. Living cells accomplish this using ATP, which can be used to fill any energy need of the cell. How? It functions as a rechargeable battery. When ATP is broken down, usually by the",
+          "text_hash": "865c7a0257bc2baf6478adaa072219cb2a375fcf2f78dff1b2e210908fa066c8",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.9091211142335657,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "385ccceb4696348485250e7b598bc9ad3394",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 7 Cellular Respiration / 7.2 Glycolysis",
+          "pages": [
+            213,
+            214
+          ],
+          "locator": "Chapter 7 Cellular Respiration / 7.2 Glycolysis; PDF physical pages 213, 214; Figures or formulas may require viewing the original PDF.",
+          "text": "the pathway will continue with two molecules of a glyceraldehyde-3-phosphate. At this point in the pathway, there is a net investment of energy from two ATP molecules in the breakdown of one glucose molecule.\n\nFIGURE 7.8 The first half of glycolysis uses two ATP molecules in the phosphorylation of glucose, which is then split into two three-carbon molecules. Second Half of Glycolysis (Energy-Releasing Steps) So far, glycolysis has cost the cell two ATP molecules and produced two small, three-carbon sugar molecules. Both of these molecules will proceed through the second half of the pathway, and sufficient energy will be extracted to pay back the two ATP molecules used as an initial investment and produce a profit for the cell of two additional ATP molecules and two even higher-energy NADH molecules. Step 6. The sixth step in glycolysis (Figure 7.9) oxidizes the sugar (glyceraldehyde-3-phosphate), extracting high-energy electrons, which are picked up by the electron carrier NAD+, producing NADH. The sugar is then phosphorylated by the addition of a second phosphate group, producing 1,3-bisphosphoglycerate. Note that the second phosphate group does not require another ATP molecule. FIGURE 7.9 The second half of glycolysis involves phosphorylation without ATP investment (step 6) and produces two NADH and four ATP molecules per glucose. Here again is a",
+          "text_hash": "c8f9ad89c75072715e1e10e2c2372ddc71f6541252f227e25f7359c00bbe11f7",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.9090368957240298,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Actual ranked source candidates; original physical PDF locations are retained."
+    },
+    {
+      "category": "biology",
+      "question": "How do natural selection and genetic drift differ?",
+      "elapsed_seconds": 13.623,
+      "hits": [
+        {
+          "chunk_id": "92e45c7bb0160903899c80754054ffac0534",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 19 The Evolution of Populations / Chapter Summary",
+          "pages": [
+            526,
+            527
+          ],
+          "locator": "Chapter 19 The Evolution of Populations / Chapter Summary; PDF physical pages 526, 527; Figures or formulas may require viewing the original PDF.",
+          "text": "can confer different phenotypes, and different environments can also cause individuals to look or act differently. Only those differences encoded in an individual’s genes, however, can pass to its offspring 506 19 • Key Terms\n\nand, thus, be a target of natural selection. Natural selection works by selecting for alleles that confer beneficial traits or behaviors, while selecting against those for deleterious qualities. Genetic drift stems from the chance occurrence that some individuals in the gene line have more offspring than others. When individuals leave or join the population, allele frequencies can change as a result of gene flow. Mutations to an individual’s DNA may introduce new variation into a population. Allele frequencies can also alter when individuals do not randomly mate with others in the group. 19.3 Adaptive Evolution Because natural selection acts to increase the frequency of beneficial alleles and traits while decreasing the frequency of deleterious qualities, it is adaptive evolution. Natural selection acts at the individual level, selecting for those that have a higher overall fitness compared to the rest of the population. If the fit phenotypes are those that are similar, natural selection will result in stabilizing selection, and an overall decrease in the population’s variation. Directional selection works to shift a population’s variability toward a new, fit phenotype, as environmental conditions change. In contrast, diversifying selection results in increased genetic variability by selecting for two or more distinct phenotypes. Other types of selection include frequency-dependent selection, in which individuals with either common (positive frequency-dependent",
+          "text_hash": "f408002660d852eac0def719eff8d58bc808fb6979342957e35857c7b62312c7",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8895352198265611,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "87b1f90cfd04e43857bb2923cf63ba184ad0",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 11 Evolution and Its Processes / 11.2 Mechanisms of Evolution",
+          "pages": [
+            268
+          ],
+          "locator": "Chapter 11 Evolution and Its Processes / 11.2 Mechanisms of Evolution; PDF physical pages 268; Figures or formulas may require viewing the original PDF.",
+          "text": "sequence of the gene. A mutation can change one allele into another, but the net effect is a change in frequency. The change in frequency resulting from mutation is small, so its effect on evolution is small unless it interacts with one of the other factors, such as selection. A mutation may produce an allele that is selected against, selected for, or selectively neutral. Harmful mutations are removed from the population by selection and will generally only be found in very low frequencies equal to the mutation rate. Beneficial mutations will spread through the population through selection, although that initial spread is slow. Whether or not a mutation is beneficial or harmful is determined by whether it helps an organism survive to sexual maturity and reproduce. It should be noted that mutation is the ultimate source of genetic variation in all populations—new alleles, and, therefore, new genetic variations arise through mutation. Genetic Drift Another way a population’s allele frequencies can change is genetic drift (Figure 11.7), which is simply the effect of chance. Genetic drift is most important in small populations. Drift would be completely absent in a population with infinite individuals, but, of course, no population is this large. Genetic drift occurs because the alleles in an offspring generation are a random sample of the alleles in the parent generation. Alleles may or may not make it into the next generation due to chance events including mortality of an individual, events affecting finding a mate, and even the events affecting which gametes end up in fertilizations. If one individual in a population of ten individuals happens to die",
+          "text_hash": "3d014cec4cd710319ab33be01a387badf16b838ab4c5733ae603af1163abbeaf",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8871928960647819,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "262429547f3605ff1cbbd5424ed1eec5afae",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 11 Evolution and Its Processes / 11.2 Mechanisms of Evolution",
+          "pages": [
+            268,
+            269
+          ],
+          "locator": "Chapter 11 Evolution and Its Processes / 11.2 Mechanisms of Evolution; PDF physical pages 268, 269; Figures or formulas may require viewing the original PDF.",
+          "text": "known as a random walk until at one point either all A or all a are chosen and that allele is fixed from that point on. This could take a very long time for a large population. This simplification is not very biological, but it can be shown that real populations behave this way. The effect of drift on frequencies is greater the smaller a population\n\nis. Its effect is also greater on an allele with a frequency far from one half. Drift will influence every allele, even those that are being naturally selected. VISU AL CONNE CTION FIGURE 11.7 Genetic drift in a population can lead to the elimination of an allele from a population by chance. In each generation, a random set of individuals reproduces to produce the next generation. The frequency of alleles in the next generation is equal to the frequency of alleles among the individuals reproducing. Do you think genetic drift would happen more quickly on an island or on the mainland? Genetic drift can also be magnified by natural or human-caused events, such as a disaster that randomly kills a large portion of the population, which is known as the bottleneck effect that results in a large portion of the gene pool suddenly being wiped out (Figure 11.8). In one fell swoop, the genetic structure of the survivors becomes the genetic structure of the entire population, which may be very different from the pre-disaster population. The disaster must be one that kills for reasons unrelated to the organism’s traits, such as a hurricane or lava flow. A mass killing caused by",
+          "text_hash": "59586f03f01826cf9f7b894bb6c56f45339c9b1289701c9c0bc765a71f19e020",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8864690958002319,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "234550a7f73366a14ccb694ef4c197730c05",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 19 The Evolution of Populations / 19.2 Population Genetics",
+          "pages": [
+            517,
+            518
+          ],
+          "locator": "Chapter 19 The Evolution of Populations / 19.2 Population Genetics; PDF physical pages 517, 518; Figures or formulas may require viewing the original PDF.",
+          "text": "are homozygous dominant for brown coat color. As a result, in the third generation the recessive b allele is lost. Do you think genetic drift would happen more quickly on an island or on the mainland? Small populations are more susceptible to the forces of genetic drift. Large populations, alternatively, are buffered against the effects of chance. If one individual of a population of 10 individuals happens to die at a young age before it leaves any offspring to the next generation, all of its genes—1/10 of the population’s gene pool—will be suddenly lost. In a population of 100, that’s only 1 percent of the overall gene pool; therefore, it is much less impactful on the population’s genetic structure.\n\nLINK T O LE ARNING Go to this site (https://openstax.org/l/genetic_drift) to watch an animation of random sampling and genetic drift in action. Natural events, such as an earthquake disaster that kills—at random—a large portion of the population, can magnify genetic drift. Known as the bottleneck effect, it results in suddenly wiping out a large portion of the gene pool (Figure 19.5). At once, the survivors' genetic structure becomes the entire population's genetic structure, which may be very different from the pre-disaster population. FIGURE 19.5 A chance event or catastrophe can reduce the genetic variability within a population. Another scenario in which populations might experience a strong influence of genetic drift is if some portion of the population leaves to start a",
+          "text_hash": "965af73260bd93d6c615315fc25255566cf1cd09b6daf28de1e4e2e749f7edd2",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8859024772956844,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "e931e24d95833873f075b3a97fcf6b918f2d",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 11 Evolution and Its Processes / 11.1 Discovering How Populations Change",
+          "pages": [
+            267
+          ],
+          "locator": "Chapter 11 Evolution and Its Processes / 11.1 Discovering How Populations Change; PDF physical pages 267; Figures or formulas may require viewing the original PDF.",
+          "text": "one allele out of another one and changes an allele’s frequency by a small, but continuous amount each generation. Each allele is generated by a low, constant mutation rate that will slowly increase the allele’s frequency in a population if no other forces act on the allele. If natural selection acts against the allele, it will be removed from the population at a low rate leading to a frequency that results from a balance between selection and mutation. This is one reason that genetic diseases remain in the human population at very low frequencies. If the allele is favored by selection, it will increase in frequency. Genetic drift causes random changes in allele frequencies when populations are small. Genetic drift can often be important in evolution, as discussed in the next section. Finally, if two populations of a species have different allele frequencies, migration of individuals between them will cause frequency changes in both populations. As it happens, there is no population in which one or more of these processes are not operating, so populations are always evolving, and the Hardy-Weinberg equilibrium will never be exactly observed. However, the Hardy-Weinberg principle gives scientists a baseline expectation for allele frequencies in a non-evolving population to which they can compare evolving populations and thereby infer what evolutionary forces might be at play. The population is evolving if the frequencies of alleles or genotypes deviate from the value expected from the Hardy-Weinberg principle. Darwin identified a special case of natural selection that he called sexual selection. Sexual selection affects an individual’s ability to mate and thus",
+          "text_hash": "1eccb12a6c72ecab7528405d863ed530c58bf333b9a949060145325b467a5abc",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8829351506080957,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Actual ranked source candidates; original physical PDF locations are retained."
+    },
+    {
+      "category": "concepts",
+      "question": "What is the difference between a food chain and a food web?",
+      "elapsed_seconds": 13.592,
+      "hits": [
+        {
+          "chunk_id": "a8a3fbea196886f66051cb85d99f02ed61ed",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 20 Ecosystems and the Biosphere / 20.1 Energy Flow through Ecosystems",
+          "pages": [
+            539
+          ],
+          "locator": "Chapter 20 Ecosystems and the Biosphere / 20.1 Energy Flow through Ecosystems; PDF physical pages 539; Figures or formulas may require viewing the original PDF.",
+          "text": "entirely. This process can lead to the complete destruction or irreversible altering of the ecosystem. Food Chains and Food Webs A food chain is a linear sequence of organisms through which nutrients and energy pass as one organism eats another; the levels in the food chain are producers, primary consumers, higher-level consumers, and finally decomposers. These levels are used to describe ecosystem structure and dynamics. There is a single path through a food chain. Each organism in a food chain occupies a specific trophic level (energy level), its position in the food chain or food web. In many ecosystems, the base, or foundation, of the food chain consists of photosynthetic organisms (plants or phytoplankton), which are called producers. The organisms that consume the producers are herbivores: the primary consumers. Secondary consumers are usually carnivores that eat the primary consumers. Tertiary consumers are carnivores that eat other carnivores. Higher-level consumers feed on the next lower trophic levels, and so on, up to the organisms at the top of the food chain: the apex consumers. In the Lake Ontario food chain, shown in Figure 20.4, the Chinook salmon is the apex consumer at the top of this food chain.",
+          "text_hash": "a58c362767196073443a9659e485ac9fafd792015f6bfe6fa58a743a433d2497",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8788891598046387,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "1f0b36599aff38c097c8e2b02111e44c283c",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 46 Ecosystems / 46.1 Ecology of Ecosystems",
+          "pages": [
+            1395
+          ],
+          "locator": "Chapter 46 Ecosystems / 46.1 Ecology of Ecosystems; PDF physical pages 1395; Figures or formulas may require viewing the original PDF.",
+          "text": "Individuals who are considered successful are seen as being at the top of the food chain, consuming all others for their benefit, whereas the less successful are seen as being at the bottom. The scientific understanding of a food chain is more precise than in its everyday usage. In ecology, a food chain is a linear sequence of organisms through which nutrients and energy pass: primary producers, primary consumers, and higher-level consumers are used to describe ecosystem structure and dynamics. There is a single path through the chain. Each organism in a food chain occupies what is called a trophic level. Depending on their role as producers or consumers, species or groups of species can be assigned to various trophic levels. In many ecosystems, the bottom of the food chain consists of photosynthetic organisms (plants and/or phytoplankton), which are called primary producers. The organisms that consume the primary producers are herbivores: the primary consumers. Secondary consumers are usually carnivores that eat the primary consumers. Tertiary consumers are carnivores that eat other carnivores. Higher-level consumers feed on the next lower trophic levels, and so on, up to the organisms at the top of the food chain: the apex consumers. In the Lake Ontario food chain shown in Figure 46.4, the Chinook salmon is the apex consumer at the top of this food chain.",
+          "text_hash": "994ad720463cd8aa497ec935c9833424f99b7833e53e82d2f77ac3f0ebdd3935",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8651773850062934,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "934b367a2b472dec6423a46e274ca2196dbb",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 20 Ecosystems and the Biosphere / 20.1 Energy Flow through Ecosystems",
+          "pages": [
+            542
+          ],
+          "locator": "Chapter 20 Ecosystems and the Biosphere / 20.1 Energy Flow through Ecosystems; PDF physical pages 542; Figures or formulas may require viewing the original PDF.",
+          "text": "credit \"sparrow\": modification of work by David Friel; credit \"beetle\": modification of work by Scott Bauer, USDA Agricultural Research Service; credit \"mushrooms\": modification of work by Chris Wee; credit \"mold\": modification of work by Dr. Lucille Georg, CDC; credit \"earthworm\": modification of work by Rob Hille; credit \"bacteria\": modification of work by Don Stalons, CDC) LINK T O LE ARNING Head to this online interactive simulator (https://openstax.org/l/food_web) to investigate food web function. In the Interactive Labs box, under Food Web, click Step 1. Read the instructions first, and then click Step 2 for additional instructions. When you are ready to create a simulation, in the upper-right corner of the Interactive Labs box, click OPEN SIMULATOR. Two general types of food webs are often shown interacting within a single ecosystem. A grazing food web has plants or other photosynthetic organisms at its base, followed by herbivores and various carnivores. A detrital food web consists of a base of organisms that feed on decaying organic matter (dead organisms), including decomposers (which break down dead and decaying organisms) and detritivores (which consume organic detritus). These organisms are usually bacteria, fungi, and invertebrate animals that recycle organic material back into the biotic part of the ecosystem as they themselves are consumed by other organisms. As ecosystems require a method",
+          "text_hash": "50153376f3b87a4364d856dadb297147bb6dc8ad1951bcbfc1e9ebb5fff50a58",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8618989872254031,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "06f1ada7131a037bfdb0172a6dc0329ca675",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 46 Ecosystems / Key Terms",
+          "pages": [
+            1418
+          ],
+          "locator": "Chapter 46 Ecosystems / Key Terms; PDF physical pages 1418; Figures or formulas may require viewing the original PDF.",
+          "text": "oil spills, dumping of toxic chemicals, and other human activities detrital food web type of food web in which the primary consumers consist of decomposers; these are often associated with grazing food webs within the same ecosystem ecological pyramid (also, Eltonian pyramid) graphical representation of different trophic levels in an ecosystem based of organism numbers, biomass, or energy content ecosystem community of living organisms and their interactions with their abiotic environment ecosystem dynamics study of the changes in ecosystem structure caused by changes in the environment or internal forces equilibrium steady state of an ecosystem where all organisms are in balance with their environment and each other eutrophication process whereby nutrient runoff causes the excess growth of microorganisms, depleting dissolved oxygen levels and killing ecosystem fauna fallout direct deposit of solid minerals on land or in the ocean from the atmosphere food chain linear representation of a chain of primary producers, primary consumers, and higher-level consumers used to describe ecosystem structure and dynamics food web graphic representation of a holistic, nonlinear web of primary producers, primary consumers, and higher-level consumers used to describe ecosystem structure and dynamics grazing food web type of food web in which the primary producers are either plants on land or phytoplankton in the water; often associated with a detrital food web within the same ecosystem gross primary productivity rate at which photosynthetic primary producers incorporate energy from the sun holistic ecosystem model study that attempts to quantify the composition, interactions, and dynamics of entire ecosystems; often limited by economic and logistical difficulties, depending on the",
+          "text_hash": "8181f0c3aefa4b51f08a4ec32b69c235dc79ac8e2027100529e3a094f936f2c9",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8591039645363201,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "9e9e4d2c60f5ce297e9f1325e9a251819356",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 20 Ecosystems and the Biosphere / 20.1 Energy Flow through Ecosystems",
+          "pages": [
+            539
+          ],
+          "locator": "Chapter 20 Ecosystems and the Biosphere / 20.1 Energy Flow through Ecosystems; PDF physical pages 539; Figures or formulas may require viewing the original PDF.",
+          "text": "complex with many interacting parts. They are routinely exposed to various disturbances: changes in the environment that affect their compositions, such as yearly variations in rainfall and temperature. Many disturbances are a result of natural processes. For example, when lightning causes a forest fire and destroys part of a forest ecosystem, the ground is eventually populated with grasses, followed by bushes and shrubs, and later mature trees: thus, the forest is restored to its former state. This process is so universal that ecologists have given it a name—succession. The impact of environmental disturbances caused by human activities is now as significant as the changes wrought by natural processes. Human agricultural practices, air pollution, acid rain, global deforestation, overfishing, oil spills, and illegal dumping on land and into the ocean all have impacts on ecosystems. Equilibrium is a dynamic state of an ecosystem in which, despite changes in species numbers and occurrence, biodiversity remains somewhat constant. In ecology, two parameters are used to measure changes in ecosystems: resistance and resilience. The ability of an ecosystem to remain at equilibrium in spite of disturbances is called resistance. The speed at which an ecosystem recovers equilibrium after being disturbed is called resilience. Ecosystem resistance and resilience are especially important when considering human impact. The nature of an ecosystem may change to such a degree that it can lose its resilience entirely. This process can lead to the complete destruction or irreversible altering of the ecosystem. Food Chains and Food Webs A food chain is a linear sequence of organisms through which nutrients and energy pass as one organism eats",
+          "text_hash": "698ab02b9d22d5b8e4e34edf8097f168ad16d912ee65cb861671890f43be8721",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8570784904004288,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Actual ranked source candidates; original physical PDF locations are retained."
+    },
+    {
+      "category": "concepts",
+      "question": "How do plants use light energy in photosynthesis?",
+      "elapsed_seconds": 13.934,
+      "hits": [
+        {
+          "chunk_id": "7fed13dca3a8ddc7eded402c2fc0ff7761e0",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 5 Photosynthesis / 5.2 The Light-Dependent Reactions of Photosynthesis",
+          "pages": [
+            136
+          ],
+          "locator": "Chapter 5 Photosynthesis / 5.2 The Light-Dependent Reactions of Photosynthesis; PDF physical pages 136; Figures or formulas may require viewing the original PDF.",
+          "text": "5.2 The Light-Dependent Reactions of Photosynthesis LEARNING OBJECTIVES By the end of this section, you will be able to: • Explain how plants absorb energy from sunlight • Describe how the wavelength of light affects its energy and color • Describe how and where photosynthesis takes place within a plant How can light be used to make food? It is easy to think of light as something that exists and allows living organisms, such as humans, to see, but light is a form of energy. Like all energy, light can travel, change form, and be harnessed to do work. In the case of photosynthesis, light energy is transformed into chemical energy, which autotrophs use to build carbohydrate molecules. However, autotrophs only use a specific component of sunlight (Figure 5.8). FIGURE 5.8 Autotrophs can capture light energy from the sun, converting it into chemical energy used to build food molecules. (credit: modification of work by Gerry Atwell, U.S. Fish and Wildlife Service) LINK T O LE ARNING Watch the process of photosynthesis (https://openstax.org/l/light_reaction2) within a leaf in this video. What Is Light Energy? The sun emits an enormous amount of electromagnetic radiation (solar energy). Humans can see only a fraction of this energy, which is referred to as “visible light.” The manner in which solar energy travels can be described and measured as waves. Scientists can determine the amount of energy of a wave by",
+          "text_hash": "580dff8221df6ded2388ac94c73a0fc70ffba4d2176f36509dac350ca387f7ed",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.9024328773071773,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "fbe7da20efbc3e75ab28ed16a104a0d80274",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 8 Photosynthesis / 8.2 The Light-Dependent Reactions of Photosynthesis",
+          "pages": [
+            240
+          ],
+          "locator": "Chapter 8 Photosynthesis / 8.2 The Light-Dependent Reactions of Photosynthesis; PDF physical pages 240; Figures or formulas may require viewing the original PDF.",
+          "text": "8.2 The Light-Dependent Reactions of Photosynthesis LEARNING OBJECTIVES By the end of this section, you will be able to do the following: • Explain how plants absorb energy from sunlight • Describe short and long wavelengths of light • Describe how and where photosynthesis takes place within a plant How can light energy be used to make food? When a person turns on a lamp, electrical energy becomes light energy. Like all other forms of kinetic energy, light can travel, change form, and be harnessed to do work. In the case of photosynthesis, light energy is converted into chemical energy, which photoautotrophs use to build basic carbohydrate molecules (Figure 8.9). However, autotrophs only use a few specific wavelengths of sunlight. FIGURE 8.9 Photoautotrophs can capture visible light energy in specific wavelengths from the sun, converting it into the chemical energy used to build food molecules. (credit: Gerry Atwell) What Is Light Energy? The sun emits an enormous amount of electromagnetic radiation (solar energy in a spectrum from very short gamma rays to very long radio waves). Humans can see only a tiny fraction of this energy, which we refer to as “visible light.” The manner in which solar energy travels is described as waves. Scientists can determine the amount of energy of a wave by measuring its wavelength (shorter wavelengths are more powerful than longer wavelengths)—the distance between consecutive crest points of a wave. Therefore, a single wave is measured from two consecutive points, such as from crest to crest",
+          "text_hash": "bd447377219a5470bdcd7935ee893776396e168e4332347210042fd23e92809d",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8995584172301624,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "89c00fdd29ac4a7ea92337e2b5ba071e9108",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 5 Photosynthesis / 5.2 The Light-Dependent Reactions of Photosynthesis",
+          "pages": [
+            138
+          ],
+          "locator": "Chapter 5 Photosynthesis / 5.2 The Light-Dependent Reactions of Photosynthesis; PDF physical pages 138; Figures or formulas may require viewing the original PDF.",
+          "text": "trees block most of the sunlight (Figure 5.11). FIGURE 5.11 Plants that commonly grow in the shade benefit from having a variety of light-absorbing pigments. Each pigment can absorb different wavelengths of light, which allows the plant to absorb any light that passes through the taller trees. (credit: Jason Hollinger) How Light-Dependent Reactions Work The overall purpose of the light-dependent reactions is to convert light energy into chemical energy. This chemical energy will be used by the Calvin cycle to fuel the assembly of sugar molecules. The light-dependent reactions begin in a grouping of pigment molecules and proteins called a photosystem. Photosystems exist in the membranes of thylakoids. A pigment molecule in the photosystem absorbs one photon, a quantity or “packet” of light energy, at a time. A photon of light energy travels until it reaches a molecule of chlorophyll. The photon causes an electron in the chlorophyll to become “excited.” The energy given to the electron allows it to break free from an atom of the chlorophyll molecule. Chlorophyll is therefore said to “donate” an electron (Figure 5.12). To replace the electron in the chlorophyll, a molecule of water is split. This splitting releases an electron and results in the formation of oxygen (O2) and hydrogen ions (H+) in the thylakoid space. Technically, each breaking of a water molecule releases a pair of electrons, and therefore can replace",
+          "text_hash": "3875811a6249a7143e15d588fc278821bb897a38f13f16ca024829c2495f6fa7",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8972405296426524,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "1da47bced1145659e8c8de1e248ce7a09820",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 8 Photosynthesis / 8.2 The Light-Dependent Reactions of Photosynthesis",
+          "pages": [
+            246
+          ],
+          "locator": "Chapter 8 Photosynthesis / 8.2 The Light-Dependent Reactions of Photosynthesis; PDF physical pages 246; Figures or formulas may require viewing the original PDF.",
+          "text": "10 percent of the oxygen is used by mitochondria in the leaf to support oxidative phosphorylation. The remainder escapes to the atmosphere where it is used by aerobic organisms to support respiration. As electrons move through the proteins that reside between PSII and PSI, they lose energy. This energy is used to move hydrogen atoms from the stromal side of the membrane to the thylakoid lumen. Those hydrogen atoms, plus the ones produced by splitting water, accumulate in the thylakoid lumen and will be used to synthesize ATP in a later step. Because the electrons have lost energy prior to their arrival at PSI, they must be re-energized by PSI, hence, another photon is absorbed by the PSI antenna. That energy is relayed to the PSI reaction center (called P700). P700 is oxidized and sends a high-energy electron to NADP+ to form NADPH. Thus, PSII captures the energy to create proton gradients to make ATP, and PSI captures the energy to reduce NADP+ into NADPH. The two photosystems work in concert, in part, to guarantee that the production of NADPH will roughly equal the production of ATP. Other mechanisms exist to fine-tune that ratio to exactly match the chloroplast’s constantly changing energy needs. Generating an Energy Carrier: ATP As in the intermembrane space of the mitochondria during cellular respiration, the buildup of hydrogen ions inside the thylakoid",
+          "text_hash": "5022f4c8e2d1e57b100084e34e90089858eae9754c74644a71ad82aff80b0752",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8967487099787602,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "efb109f6149767f1d5034497b57f1f9e9562",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 8 Photosynthesis / 8.3 Using Light Energy to Make Organic Molecules",
+          "pages": [
+            249
+          ],
+          "locator": "Chapter 8 Photosynthesis / 8.3 Using Light Energy to Make Organic Molecules; PDF physical pages 249; Figures or formulas may require viewing the original PDF.",
+          "text": "and the Calvin cycle. EVOLUTION C ONNE CTION Photosynthesis During the evolution of photosynthesis, a major shift occurred from the bacterial type of photosynthesis that involves only one photosystem and is typically anoxygenic (does not generate oxygen) into modern oxygenic (does generate oxygen) photosynthesis, employing two photosystems. This modern oxygenic photosynthesis is used by many organisms—from giant tropical leaves in the rainforest to tiny cyanobacterial cells—and the process and components of this photosynthesis remain largely the same. Photosystems absorb light and use electron transport chains to convert energy into the chemical energy of ATP and NADH. The subsequent light-independent reactions then assemble carbohydrate molecules with this energy. In the harsh dry heat of the desert, plants must conserve and use every drop of water to survive. Because stomata must open to allow for the uptake of CO2, water escapes from the leaf during active photosynthesis. Desert plants have evolved processes to conserve water and deal with harsh conditions. Mechanisms to capture and store CO2 allows plants to adapt to living with less water. Some plants such as cacti (Figure 8.20) can prepare materials for photosynthesis during the night by a temporary carbon fixation/storage process, because opening the stomata at this time conserves water due to cooler temperatures. During the day cacti use the captured CO2 for photosynthesis, and keep their stomata closed. FIGURE 8.20 The",
+          "text_hash": "81482c01ac4deadf67a85d78f3dae40d42aea46d80e045777c1e04dc3e61a867",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8964983576344019,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Actual ranked source candidates; original physical PDF locations are retained."
+    },
+    {
+      "category": "concepts",
+      "question": "What is the difference between prokaryotic and eukaryotic cells?",
+      "elapsed_seconds": 14.178,
+      "hits": [
+        {
+          "chunk_id": "a37987717bac1bafa99d6f63564cf01ba9cb",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 3 Cell Structure and Function / 3.2 Comparing Prokaryotic and Eukaryotic Cells",
+          "pages": [
+            75
+          ],
+          "locator": "Chapter 3 Cell Structure and Function / 3.2 Comparing Prokaryotic and Eukaryotic Cells; PDF physical pages 75; Figures or formulas may require viewing the original PDF.",
+          "text": "3.2 Comparing Prokaryotic and Eukaryotic Cells LEARNING OBJECTIVES By the end of this section, you will be able to: • Name examples of prokaryotic and eukaryotic organisms • Compare and contrast prokaryotic cells and eukaryotic cells • Describe the relative sizes of different kinds of cells Cells fall into one of two broad categories: prokaryotic and eukaryotic. The predominantly single-celled organisms of the domains Bacteria and Archaea are classified as prokaryotes (pro- = before; -karyon- = nucleus). Animal cells, plant cells, fungi, and protists are eukaryotes (eu- = true). Components of Prokaryotic Cells All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell’s interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like region within the cell in which other cellular components are found; 3) DNA, the genetic material of the cell; and 4) ribosomes, particles that synthesize proteins. However, prokaryotes differ from eukaryotic cells in several ways. A prokaryotic cell is a simple, single-celled (unicellular) organism that lacks a nucleus, or any other membrane-bound organelle. We will shortly come to see that this is significantly different in eukaryotes. Prokaryotic DNA is found in the central part of the cell: a",
+          "text_hash": "57cf9eb6d9c59a7c95d5eff69ff86f2af2b11c30d1ddbad6000da985a32688fe",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.91032743528691,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "2c9c7593bf24d32d332230ceb9f8b60b2fa1",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 3 Cell Structure and Function / 3.2 Comparing Prokaryotic and Eukaryotic Cells",
+          "pages": [
+            75,
+            76
+          ],
+          "locator": "Chapter 3 Cell Structure and Function / 3.2 Comparing Prokaryotic and Eukaryotic Cells; PDF physical pages 75, 76; Figures or formulas may require viewing the original PDF.",
+          "text": "the relationship between form and function is apparent at all levels, including the level of the cell, and this will become clear as we explore eukaryotic cells. The principle “form follows function” is found in many contexts.\n\nFor example, birds and fish have streamlined bodies that allow them to move quickly through the medium in which they live, be it air or water. It means that, in general, one can deduce the function of a structure by looking at its form, because the two are matched. A eukaryotic cell is a cell that has a membrane-bound nucleus and other membrane-bound compartments or sacs, called organelles, which have specialized functions. The word eukaryotic means “true kernel” or “true nucleus,” alluding to the presence of the membrane-bound nucleus in these cells. The word “organelle” means “little organ,” and, as already mentioned, organelles have specialized cellular functions, just as the organs of your body have specialized functions. Cell Size At 0.1–5.0 µm in diameter, prokaryotic cells are significantly smaller than eukaryotic cells, which have diameters ranging from 10–100 µm (Figure 3.6). The small size of prokaryotes allows ions and organic molecules that enter them to quickly spread to other parts of the cell. Similarly, any wastes produced within a prokaryotic cell can quickly move out. However, larger eukaryotic cells have evolved different structural adaptations to enhance cellular transport.",
+          "text_hash": "68d34c43b5edfdcb47792876e2166f45b676aac8a9404cb874a09a7478a189f0",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8982883203682974,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "a4fa0b140060fee3b527391ad91f9b14db32",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 4 Cell Structure / 4.2 Prokaryotic Cells",
+          "pages": [
+            122
+          ],
+          "locator": "Chapter 4 Cell Structure / 4.2 Prokaryotic Cells; PDF physical pages 122; Figures or formulas may require viewing the original PDF.",
+          "text": "4.2 Prokaryotic Cells LEARNING OBJECTIVES By the end of this section, you will be able to do the following: • Name examples of prokaryotic and eukaryotic organisms • Compare and contrast prokaryotic and eukaryotic cells • Describe the relative sizes of different cells • Explain why cells must be small Cells fall into one of two broad categories: prokaryotic and eukaryotic. We classify only the predominantly single-celled organisms Bacteria and Archaea as prokaryotes (pro- = “before”; -kary- = “nucleus”). Animal cells, plants, fungi, and protists are all eukaryotes (eu- = “true”). Components of Prokaryotic Cells All cells share four common components: 1) a plasma membrane, an outer covering that separates the cell’s interior from its surrounding environment; 2) cytoplasm, consisting of a jelly-like cytosol within the cell in which there are other cellular components; 3) DNA, the cell's genetic material; and 4) ribosomes, which synthesize proteins. However, prokaryotes differ from eukaryotic cells in several ways. A prokaryote is a simple, mostly single-celled (unicellular) organism that lacks a nucleus, or any other membrane-bound organelle. We will shortly come to see that this is significantly different in eukaryotes. Prokaryotic DNA is in the cell's central",
+          "text_hash": "cabe451301c36881499a58f8eedbc12bbe391c8362bba3164d385b2beb48ef10",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8958971926902127,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "3d91f634ea0cba8b98c07211766b3a38e6c8",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 3 Cell Structure and Function / 3.2 Comparing Prokaryotic and Eukaryotic Cells",
+          "pages": [
+            75
+          ],
+          "locator": "Chapter 3 Cell Structure and Function / 3.2 Comparing Prokaryotic and Eukaryotic Cells; PDF physical pages 75; Figures or formulas may require viewing the original PDF.",
+          "text": "lacks a nucleus, or any other membrane-bound organelle. We will shortly come to see that this is significantly different in eukaryotes. Prokaryotic DNA is found in the central part of the cell: a darkened region called the nucleoid (Figure 3.5). FIGURE 3.5 This figure shows the generalized structure of a prokaryotic cell. Unlike Archaea and eukaryotes, bacteria have a cell wall made of peptidoglycan, comprised of sugars and amino acids, and many have a polysaccharide capsule (Figure 3.5). The cell wall acts as an extra layer of protection, helps the cell maintain its shape, and prevents dehydration. The capsule enables the cell to attach to surfaces in its environment. Some prokaryotes have flagella, pili, or fimbriae. Flagella are used for locomotion, while most pili are used to exchange genetic material during a type of reproduction called conjugation. Eukaryotic Cells In nature, the relationship between form and function is apparent at all levels, including the level of the cell, and this will become clear as we explore eukaryotic cells. The principle “form follows function” is found in many contexts.",
+          "text_hash": "696af24c73185a6fcbe160a78696dbdf13fe1c8899ffc4036d1e52766eb0f8a4",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8950759293822274,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "e3e5a5feaeaeee4044d0e6509cd84dcde92c",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 6 Reproduction at the Cellular Level / Chapter Summary",
+          "pages": [
+            163
+          ],
+          "locator": "Chapter 6 Reproduction at the Cellular Level / Chapter Summary; PDF physical pages 163; Figures or formulas may require viewing the original PDF.",
+          "text": "contents are also divided evenly to the new cells. However, there are many differences between prokaryotic and eukaryotic cell division. Bacteria have a single, circular DNA chromosome and no nucleus. Therefore, mitosis is not necessary in bacterial cell division. Bacterial cytokinesis is directed by a ring composed of a protein called FtsZ. Ingrowth of membrane and cell-wall material from the periphery of the cells results in a septum that eventually forms the separate cell walls of the daughter cells.",
+          "text_hash": "37d537582ce461856628124c274890c8454abe0346b46d477213d9a131dae3ed",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8948867381256863,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Actual ranked source candidates; original physical PDF locations are retained."
+    },
+    {
+      "category": "unrelated",
+      "question": "How do I configure Kubernetes ingress TLS certificates?",
+      "elapsed_seconds": 14.2,
+      "hits": [
+        {
+          "chunk_id": "0989ed9f7a71d0bae2c5b1f684f36c9236fb",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Preface / About OpenStax",
+          "pages": [
+            18,
+            19
+          ],
+          "locator": "Preface / About OpenStax; PDF physical pages 18, 19; Figures or formulas may require viewing the original PDF.",
+          "text": "in the Book Answers to Examples are provided just below the question in the book. Odd-numbered Exercises are provided to students in the Answer Key as well as the Student Solution Guide on the Student Resources page. Even-numbered 4 Preface\n\nanswers are provided only to instructors in the Instructor Answer Guide via the Instructor Resources page. Additional resources Student and instructor resources We’ve compiled additional resources for both students and instructors, including Getting Started Guides, an instructor solutions manual, and PowerPoint slides. Instructor resources require a verified instructor account, which you can apply for when you log in or create your account on OpenStax.org. Take advantage of these resources to supplement your OpenStax book. Community Hubs OpenStax partners with the Institute for the Study of Knowledge Management in Education (ISKME) to offer Community Hubs on OER Commons — a platform for instructors to share community-created resources that support OpenStax books, free of charge. Through our Community Hubs, instructors can upload their own materials or download resources to use in their own courses, including additional ancillaries, teaching material, multimedia, and relevant course content. We encourage instructors to join the hubs for the subjects most relevant to your teaching and research as an opportunity both to enrich your courses and to engage with other faculty. To reach the Community Hubs, visit www.oercommons.org/hubs/OpenStax. Technology partners As allies in making high-quality learning materials accessible, our technology partners offer optional low-cost tools that are integrated with OpenStax",
+          "text_hash": "400bb1df02834f4b08a542cbaca52276585b456ad4f80598e717509da3b68af7",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8290428845661078,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "f287d4320527d6dd597c5c0d64962703006d",
+          "asset_id": "826b6848-7150-4959-bed9-ce33acfa856d",
+          "processing_id": "6d738fc3-a544-4a3c-85a6-0b10e2665cd5",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/anatomy-and-physiology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Preface / About OpenStax",
+          "pages": [
+            20
+          ],
+          "locator": "Preface / About OpenStax; PDF physical pages 20; Figures or formulas may require viewing the original PDF.",
+          "text": "and several types of PowerPoint slides and image resources. Instructor resources require a verified instructor account, which you can apply for when you log in or create your account on OpenStax.org. Student resources include guided lecture notes, a student solutions manual, and a pronunciation guide. Community Hubs OpenStax partners with the Institute for the Study of Knowledge Management in Education (ISKME) to offer Community Hubs on OER Commons—a platform for instructors to share community-created resources that support OpenStax books, free of charge. Through our Community Hubs, instructors can upload their own materials or download resources to use in their own courses, including additional ancillaries, teaching material, multimedia, and relevant course content. We encourage instructors to join the hubs for the subjects most relevant to your teaching and research as an opportunity both to enrich your courses and to engage with other faculty. To reach the Community Hubs, visit www.oercommons.org/hubs/openstax. Technology Partners As allies in making high-quality learning materials accessible, our technology partners offer optional low-cost tools that are integrated with OpenStax books. To access the technology options for your text, visit your book page on OpenStax.org. About the Authors Senior Contributing Authors J. Gordon Betts, Tyler Junior College Peter Desaix, University of North Carolina at Chapel Hill Eddie Johnson, Central Oregon Community College Jody E. Johnson, Arapahoe Community College Oksana Korol, Aims Community College Dean Kruse,",
+          "text_hash": "1c76ae817bf78609b6b8e216c18fead47bf62324f4ccc4b2c113bd808130f8b5",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.826773039270535,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "bf89c15589b4d06631f4495a6d373c46d777",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            4,
+            5
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 4, 5; Figures or formulas may require viewing the original PDF.",
+          "text": "and the European Union. These trademarks may not be used without the prior and express written consent of Kendall Hunt. COLOR PAPERBACK BOOK ISBN-13 978-1-947172-62-3 B&W PAPERBACK BOOK ISBN-13 978-1-59399-578-2 DIGITAL VERSION ISBN-13 978-1-947172-61-6 ORIGINAL PUBLICATION YEAR 2019 3 4 5 6 7 8 9 10 RS 26 22 19\n\nOPENSTAX OpenStax provides free, peer -reviewed, openly licensed textbooks for introductory college and Advanced Placement® courses and low -cost, personalized courseware that helps students learn. A nonprofit ed tech initiative based at Rice University, we’re committed to helping students access the tools they need to complete their courses and meet their educational goals. RICE UNIVERSITY OpenStax is an initiative of Rice University. As a leading research university with a distinctive commitment to undergraduate education, Rice University aspires to path -breaking research, unsurpassed teaching, and contributions to the betterment of our world. It seeks to fulfill this mission by cultivating a diverse community of learning and discovery that produces leaders across the spectrum of human endeavor. PHILANTHROPIC SUPPORT OpenStax is grateful for the generous philanthropic partners who advance our mission to improve educational access and learning for everyone. To see the impact of our supporter community and our most updated list of partners, please visit openstax.org/foundation. Arnold Ventures Chan Zuckerberg Initiative Chegg, Inc. Arthur and Carlyse Ciocca Charitable Foundation Digital Promise Ann and",
+          "text_hash": "59ae18c65812d26f3deca6487f766eed88e7314338952485241c21f83bc23d1f",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8199944879561485,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "93539728f7b1082134d0b7c462f321be940a",
+          "asset_id": "3294e86a-c158-4dbe-97e3-6169352497ab",
+          "processing_id": "83237af8-d48e-42a5-96bf-4e30282ab03e",
+          "source_title": "Concepts of Biology",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Concepts-Biology_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            4
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 4",
+          "text": "you must include on every physical page the following attribution: “Access for free at openstax.org.” - If you noncommercially redistribute part of this textbook, then you must retain in every digital format page view (including but not limited to PDF and HTML) and on every physical printed page the following attribution: “Access for free at openstax.org.” - If you use this textbook as a bibliographic reference, please include https://openstax.org/details/books/concepts-biology in your citation. For questions regarding this licensing, please contact support@openstax.org. Trademarks The OpenStax name, OpenStax logo, OpenStax book covers, OpenStax CNX name, OpenStax CNX logo, OpenStax Tutor name, Openstax Tutor logo, Connexions name, Connexions logo, Rice University name, and Rice University logo are not subject to the license and may not be reproduced without the prior and express written consent of Rice University. Kendall Hunt and the Kendall Hunt Logo are trademarks of Kendall Hunt. The Kendall Hunt mark is registered in the United States, Canada, and the European Union. These trademarks may not be used without the prior and express written consent of Kendall Hunt. COLOR PAPERBACK BOOK ISBN-13 978-1-938168-11-6 B&W PAPERBACK BOOK ISBN-13 978-1-50669-653-9 DIGITAL VERSION",
+          "text_hash": "d88e0b805af635ca58d8e68838f997e3bbb1fd36e53899a3350dfab98b4b3825",
+          "quality_warnings": [],
+          "score": 0.8197750478386542,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "8b6c1f8102b241df8f09bd7d27d7dc748e84",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Answer Key",
+          "pages": [
+            1135
+          ],
+          "locator": "Answer Key; PDF physical pages 1135; Figures or formulas may require viewing the original PDF.",
+          "text": "ANSWER KEY",
+          "text_hash": "ec7c690457c706d5984995feb7c9cbbead38163dbf97a339e7c45c766adf5353",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8188114872450576,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Nearest-neighbor candidates are not proof of relevance; this unrelated question also requires an answer-layer insufficiency check."
+    },
+    {
+      "category": "unrelated",
+      "question": "Who won the 2026 Formula One world championship?",
+      "elapsed_seconds": 13.918,
+      "hits": [
+        {
+          "chunk_id": "bf89c15589b4d06631f4495a6d373c46d777",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            4,
+            5
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 4, 5; Figures or formulas may require viewing the original PDF.",
+          "text": "and the European Union. These trademarks may not be used without the prior and express written consent of Kendall Hunt. COLOR PAPERBACK BOOK ISBN-13 978-1-947172-62-3 B&W PAPERBACK BOOK ISBN-13 978-1-59399-578-2 DIGITAL VERSION ISBN-13 978-1-947172-61-6 ORIGINAL PUBLICATION YEAR 2019 3 4 5 6 7 8 9 10 RS 26 22 19\n\nOPENSTAX OpenStax provides free, peer -reviewed, openly licensed textbooks for introductory college and Advanced Placement® courses and low -cost, personalized courseware that helps students learn. A nonprofit ed tech initiative based at Rice University, we’re committed to helping students access the tools they need to complete their courses and meet their educational goals. RICE UNIVERSITY OpenStax is an initiative of Rice University. As a leading research university with a distinctive commitment to undergraduate education, Rice University aspires to path -breaking research, unsurpassed teaching, and contributions to the betterment of our world. It seeks to fulfill this mission by cultivating a diverse community of learning and discovery that produces leaders across the spectrum of human endeavor. PHILANTHROPIC SUPPORT OpenStax is grateful for the generous philanthropic partners who advance our mission to improve educational access and learning for everyone. To see the impact of our supporter community and our most updated list of partners, please visit openstax.org/foundation. Arnold Ventures Chan Zuckerberg Initiative Chegg, Inc. Arthur and Carlyse Ciocca Charitable Foundation Digital Promise Ann and",
+          "text_hash": "59ae18c65812d26f3deca6487f766eed88e7314338952485241c21f83bc23d1f",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.7627303323382448,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "bbd956e4da574ae1d7f810a0e1d574d287b3",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            5,
+            6
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 5, 6; Figures or formulas may require viewing the original PDF.",
+          "text": "To see the impact of our supporter community and our most updated list of partners, please visit openstax.org/foundation. Arnold Ventures Chan Zuckerberg Initiative Chegg, Inc. Arthur and Carlyse Ciocca Charitable Foundation Digital Promise Ann and John Doerr Bill & Melinda Gates Foundation Girard Foundation Google Inc. The William and Flora Hewlett Foundation The Hewlett-Packard Company Intel Inc. Rusty and John Jaggers The Calvin K. Kazanjian Economics Foundation Charles Koch Foundation Leon Lowenstein Foundation, Inc. The Maxfield Foundation Burt and Deedee McMurtry Michelson 20MM Foundation National Science Foundation The Open Society Foundations Jumee Yhu and David E. Park III Brian D. Patterson USA-International Foundation The Bill and Stephanie Sick Fund Steven L. Smith & Diana T. Go Stand Together Robin and Sandy Stuart Foundation The Stuart Family Foundation Tammy and Guillermo Treviño Valhalla Charitable Foundation White Star Education Foundation Schmidt Futures William Marsh Rice University\n\nStudy where you want, what you want, when you want. When you access College Success in our web view, you can use our new online highlighting and note-taking features to create your own study guides. Our books are free and flexible, forever. Get started at openstax.org/details/books/biology-2e Access. The future of education. openstax.org",
+          "text_hash": "4c607c3212c372097dfb2dce0ee1d06fb993b26b4570afce9a5428419d991a2e",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.7612736180701105,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "509e1d41a6effc200b1267c004a927fcc3e7",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            5,
+            6
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 5, 6; Figures or formulas may require viewing the original PDF.",
+          "text": "our supporter community and our most updated list of partners, please visit openstax.org/foundation. Arnold Ventures Chan Zuckerberg Initiative Chegg, Inc. Arthur and Carlyse Ciocca Charitable Foundation Digital Promise Ann and John Doerr Bill & Melinda Gates Foundation Girard Foundation Google Inc. The William and Flora Hewlett Foundation The Hewlett-Packard Company Intel Inc. Rusty and John Jaggers The Calvin K. Kazanjian Economics Foundation Charles Koch Foundation Leon Lowenstein Foundation, Inc. The Maxfield Foundation Burt and Deedee McMurtry Michelson 20MM Foundation National Science Foundation The Open Society Foundations Jumee Yhu and David E. Park III Brian D. Patterson USA-International Foundation The Bill and Stephanie Sick Fund Steven L. Smith & Diana T. Go Stand Together Robin and Sandy Stuart Foundation The Stuart Family Foundation Tammy and Guillermo Treviño Valhalla Charitable Foundation White Star Education Foundation Schmidt Futures William Marsh Rice University\n\nStudy where you want, what you want, when you want. When you access your book in our web view, you can use our new online highlighting and note-taking features to create your own study guides. Our books are free and flexible, forever. Get started at openstax.org/details/books/chemistry-2e Access. The future of education. openstax.org",
+          "text_hash": "b275343cd788b1144a3c77ba5b0b4244a7d34e632e145045b8345b05d84bbf6a",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.7597768180378193,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "3f1643be3298a9202be169edb8496f1f92b7",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            4,
+            5
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 4, 5; Figures or formulas may require viewing the original PDF.",
+          "text": "United States, Canada, and the European Union. These trademarks may not be used without the prior and express written consent of Kendall Hunt. COLOR PAPERBACK BOOK ISBN-13 978-1-947172-51-7 B&W PAPERBACK BOOK ISBN-13 978-1-50669-985-1 DIGITAL VERSION ISBN-13 978-1-947172-52-4 ORIGINAL PUBLICATION YEAR 2018 4 5 6 7 8 9 10 RS 26 25 20 18\n\nOPENSTAX OpenStax provides free, peer -reviewed, openly licensed textbooks for introductory college and Advanced Placement® courses and low -cost, personalized courseware that helps students learn. A nonprofit ed tech initiative based at Rice University, we’re committed to helping students access the tools they need to complete their courses and meet their educational goals. RICE UNIVERSITY OpenStax is an initiative of Rice University. As a leading research university with a distinctive commitment to undergraduate education, Rice University aspires to path -breaking research, unsurpassed teaching, and contributions to the betterment of our world. It seeks to fulfill this mission by cultivating a diverse community of learning and discovery that produces leaders across the spectrum of human endeavor. PHILANTHROPIC SUPPORT OpenStax is grateful for the generous philanthropic partners who advance our mission to improve educational access and learning for everyone. To see the impact of our supporter community and our most updated list of partners, please visit openstax.org/foundation. Arnold Ventures Chan Zuckerberg Initiative Chegg, Inc. Arthur and Carlyse Ciocca",
+          "text_hash": "c2df499a437b825b577f34b918cac61e38c5b9163f767710bc1841a0bf84582a",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.7594760908555968,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "e42b1e0d7db704f30c9f06d8591f161fd04b",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Chapter 21 Nuclear Chemistry / 21.4 Transmutation and Nuclear Energy",
+          "pages": [
+            1038,
+            1039
+          ],
+          "locator": "Chapter 21 Nuclear Chemistry / 21.4 Transmutation and Nuclear Energy; PDF physical pages 1038, 1039; Figures or formulas may require viewing the original PDF.",
+          "text": "which are then analyzed by CERN scientists using powerful computers. FIGURE 21.13 A small section of the LHC is shown with workers traveling along it. (credit: Christophe Delaere) In 2012, CERN announced that experiments at the LHC showed the first observations of the Higgs boson, an elementary particle that helps explain the origin of mass in fundamental particles. This long-anticipated discovery made worldwide news and resulted in the awarding of the 2013 Nobel Prize in Physics to François Englert and Peter Higgs, who had predicted the existence of this particle almost 50 years previously.\n\nPlutonium is now mostly formed in nuclear reactors as a byproduct during the fission of U-235. Additional neutrons are released during this fission process (see the next section), some of which combine with U-238 nuclei to form uranium-239; this undergoes β decay to form neptunium-239, which in turn undergoes β decay to form plutonium-239 as illustrated in the preceding three equations. These processes are summarized in the equation: Heavier isotopes of plutonium—Pu-240, Pu-241, and Pu-242—are also produced when lighter plutonium nuclei capture neutrons. Some of this highly radioactive plutonium is used to produce military weapons, and the rest presents a serious storage problem because they have half-lives from thousands to hundreds of thousands of years. Although they have not been prepared in the same quantity as plutonium, many other synthetic nuclei have been produced. Nuclear medicine has developed from the ability to convert atoms of one",
+          "text_hash": "919f8edc245bc8e83a38211bf6c76711ff42154dba5b04f6a619b5992bb07ef1",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.7559452639665025,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Nearest-neighbor candidates are not proof of relevance; this unrelated question also requires an answer-layer insufficiency check."
+    },
+    {
+      "category": "unrelated",
+      "question": "What is the current exchange rate between the yen and the euro?",
+      "elapsed_seconds": 13.542,
+      "hits": [
+        {
+          "chunk_id": "509e1d41a6effc200b1267c004a927fcc3e7",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            5,
+            6
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 5, 6; Figures or formulas may require viewing the original PDF.",
+          "text": "our supporter community and our most updated list of partners, please visit openstax.org/foundation. Arnold Ventures Chan Zuckerberg Initiative Chegg, Inc. Arthur and Carlyse Ciocca Charitable Foundation Digital Promise Ann and John Doerr Bill & Melinda Gates Foundation Girard Foundation Google Inc. The William and Flora Hewlett Foundation The Hewlett-Packard Company Intel Inc. Rusty and John Jaggers The Calvin K. Kazanjian Economics Foundation Charles Koch Foundation Leon Lowenstein Foundation, Inc. The Maxfield Foundation Burt and Deedee McMurtry Michelson 20MM Foundation National Science Foundation The Open Society Foundations Jumee Yhu and David E. Park III Brian D. Patterson USA-International Foundation The Bill and Stephanie Sick Fund Steven L. Smith & Diana T. Go Stand Together Robin and Sandy Stuart Foundation The Stuart Family Foundation Tammy and Guillermo Treviño Valhalla Charitable Foundation White Star Education Foundation Schmidt Futures William Marsh Rice University\n\nStudy where you want, what you want, when you want. When you access your book in our web view, you can use our new online highlighting and note-taking features to create your own study guides. Our books are free and flexible, forever. Get started at openstax.org/details/books/chemistry-2e Access. The future of education. openstax.org",
+          "text_hash": "b275343cd788b1144a3c77ba5b0b4244a7d34e632e145045b8345b05d84bbf6a",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8007123394010381,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "8b6c1f8102b241df8f09bd7d27d7dc748e84",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Answer Key",
+          "pages": [
+            1135
+          ],
+          "locator": "Answer Key; PDF physical pages 1135; Figures or formulas may require viewing the original PDF.",
+          "text": "ANSWER KEY",
+          "text_hash": "ec7c690457c706d5984995feb7c9cbbead38163dbf97a339e7c45c766adf5353",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8006803419549047,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "bf89c15589b4d06631f4495a6d373c46d777",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            4,
+            5
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 4, 5; Figures or formulas may require viewing the original PDF.",
+          "text": "and the European Union. These trademarks may not be used without the prior and express written consent of Kendall Hunt. COLOR PAPERBACK BOOK ISBN-13 978-1-947172-62-3 B&W PAPERBACK BOOK ISBN-13 978-1-59399-578-2 DIGITAL VERSION ISBN-13 978-1-947172-61-6 ORIGINAL PUBLICATION YEAR 2019 3 4 5 6 7 8 9 10 RS 26 22 19\n\nOPENSTAX OpenStax provides free, peer -reviewed, openly licensed textbooks for introductory college and Advanced Placement® courses and low -cost, personalized courseware that helps students learn. A nonprofit ed tech initiative based at Rice University, we’re committed to helping students access the tools they need to complete their courses and meet their educational goals. RICE UNIVERSITY OpenStax is an initiative of Rice University. As a leading research university with a distinctive commitment to undergraduate education, Rice University aspires to path -breaking research, unsurpassed teaching, and contributions to the betterment of our world. It seeks to fulfill this mission by cultivating a diverse community of learning and discovery that produces leaders across the spectrum of human endeavor. PHILANTHROPIC SUPPORT OpenStax is grateful for the generous philanthropic partners who advance our mission to improve educational access and learning for everyone. To see the impact of our supporter community and our most updated list of partners, please visit openstax.org/foundation. Arnold Ventures Chan Zuckerberg Initiative Chegg, Inc. Arthur and Carlyse Ciocca Charitable Foundation Digital Promise Ann and",
+          "text_hash": "59ae18c65812d26f3deca6487f766eed88e7314338952485241c21f83bc23d1f",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8006063065874768,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "68568effa1e10595c6c61a7b62f19cfe35df",
+          "asset_id": "76de5d4c-a66f-4a77-be54-938fe368b632",
+          "processing_id": "3391b92d-7761-4020-b393-f06bf68eb28b",
+          "source_title": "Chemistry 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/chemistry-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "Preface / About OpenStax",
+          "pages": [
+            19
+          ],
+          "locator": "Preface / About OpenStax; PDF physical pages 19; Figures or formulas may require viewing the original PDF.",
+          "text": "visit www.oercommons.org/hubs/OpenStax. Technology partners As allies in making high-quality learning materials accessible, our technology partners offer optional low-cost tools that are integrated with OpenStax books. To access the technology options for your text, visit your book page on OpenStax.org. About the authors Senior contributing authors Paul Flowers, University of North Carolina at Pembroke Dr. Paul Flowers earned a BS in Chemistry from St. Andrews Presbyterian College in 1983 and a PhD in Analytical Chemistry from the University of Tennessee in 1988. After a one-year postdoctoral appointment at Los Alamos National Laboratory, he joined the University of North Carolina at Pembroke in the fall of 1989. Dr. Flowers teaches courses in general and analytical chemistry, and conducts experimental research involving the development of new devices and methods for microscale chemical analysis. Klaus Theopold, University of Delaware Dr. Klaus Theopold (born in Berlin, Germany) received his Vordiplom from the Universität Hamburg in 1977. He then decided to pursue his graduate studies in the United States, where he received his PhD in inorganic chemistry from UC Berkeley in 1982. After a year of postdoctoral research at MIT, he joined the faculty at Cornell University. In 1990, he moved to the University of Delaware, where he is a Professor in the Department of Chemistry and Biochemistry and serves as an Associate Director of the University’s Center for Catalytic Science and Technology. Dr. Theopold regularly teaches graduate courses in inorganic and organometallic chemistry as well as general chemistry.",
+          "text_hash": "3ec8b2d36ad3ba44e96a56e656834cf1a51bd82dbed698553662dde39ebade6b",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.8002417414733114,
+          "score_type": "cosine"
+        },
+        {
+          "chunk_id": "3f1643be3298a9202be169edb8496f1f92b7",
+          "asset_id": "071d52f9-ad95-4e50-84bd-e43ed136121f",
+          "processing_id": "68334a80-0ad3-4198-8703-2b830a85a9ce",
+          "source_title": "Biology 2e",
+          "source_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology-2e_-_WEB.pdf",
+          "license": "Catalog: Creative Commons Attribution-NonCommercial-ShareAlike License 4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/. Embedded PDF terms are separately recorded in source inspection evidence.",
+          "section": "PDF physical page 1",
+          "pages": [
+            4,
+            5
+          ],
+          "locator": "PDF physical page 1; PDF physical pages 4, 5; Figures or formulas may require viewing the original PDF.",
+          "text": "United States, Canada, and the European Union. These trademarks may not be used without the prior and express written consent of Kendall Hunt. COLOR PAPERBACK BOOK ISBN-13 978-1-947172-51-7 B&W PAPERBACK BOOK ISBN-13 978-1-50669-985-1 DIGITAL VERSION ISBN-13 978-1-947172-52-4 ORIGINAL PUBLICATION YEAR 2018 4 5 6 7 8 9 10 RS 26 25 20 18\n\nOPENSTAX OpenStax provides free, peer -reviewed, openly licensed textbooks for introductory college and Advanced Placement® courses and low -cost, personalized courseware that helps students learn. A nonprofit ed tech initiative based at Rice University, we’re committed to helping students access the tools they need to complete their courses and meet their educational goals. RICE UNIVERSITY OpenStax is an initiative of Rice University. As a leading research university with a distinctive commitment to undergraduate education, Rice University aspires to path -breaking research, unsurpassed teaching, and contributions to the betterment of our world. It seeks to fulfill this mission by cultivating a diverse community of learning and discovery that produces leaders across the spectrum of human endeavor. PHILANTHROPIC SUPPORT OpenStax is grateful for the generous philanthropic partners who advance our mission to improve educational access and learning for everyone. To see the impact of our supporter community and our most updated list of partners, please visit openstax.org/foundation. Arnold Ventures Chan Zuckerberg Initiative Chegg, Inc. Arthur and Carlyse Ciocca",
+          "text_hash": "c2df499a437b825b577f34b918cac61e38c5b9163f767710bc1841a0bf84582a",
+          "quality_warnings": [
+            {
+              "code": "UNEXTRACTED_VISUAL_CONTENT",
+              "message": "Figures or formulas may require viewing the original PDF."
+            }
+          ],
+          "score": 0.7949585140971327,
+          "score_type": "cosine"
+        }
+      ],
+      "exact_passage_hashes_verified": true,
+      "interpretation": "Nearest-neighbor candidates are not proof of relevance; this unrelated question also requires an answer-layer insufficiency check."
+    }
+  ]
+}
